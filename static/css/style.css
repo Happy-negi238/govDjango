@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "open-sans";
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+  font-family: "open-sans-semibold";
+  src: url(../fonts/open-sans/OpenSans-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  max-width: 1260px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* background-color: burlywood; */
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+.project-image {
+  flex-basis: 50%;
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-container {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-name {
+  display: flex;
+  flex-direction: row;
+  /* background-color: skyblue; */
+  justify-content: space-between;
+  height: 45%;
+  padding: 20px 25px 20px 25px;
+  color: white;
+  background-image: url("../images/mountain-3.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgb(0, 51, 102, 0.3);
+}
+
+.project-name1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 45%;
+  padding: 20px 25px 20px 25px;
+  color: white;
+  background-image: url("../images/mountain-3.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgb(0, 51, 102, 0.3);
+}
+
+.project-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-list ul li {
+  list-style-type: none;
+  font-family: system-ui;
+  font-weight: 400;
+}
+.update-container {
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.update {
+  max-width: 1260px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+.heading h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #003366;
+    font-family: Helvetica, sans-serif;
+    
+}
+.project {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+.project > div {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(to right, #911a80, #d42b45);
+  background-clip: text;
+  color: transparent;
+  font-size: 16px;
+}
