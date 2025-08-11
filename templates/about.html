@@ -1,0 +1,116 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/about.css'  %}">
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="first-child">
+            <div class="detail">
+                <div class="head">
+                    <h3>Controller General of Patents, Designs, and Trade
+                        Marks</h3>
+                </div>
+                <div class="para">
+                    <p>The Office of the Controller General of Patents,
+                        Designs & Trade Marks (CGPDTM) is located at Mumbai.
+                        The Head Office of the Patent office is at Kolkata
+                        and its Branch offices are located at Chennai, New
+                        Delhi and Mumbai. The Trade Marks registry is at
+                        Mumbai and its Branches are located in Kolkata,
+                        Chennai, Ahmedabad and New Delhi. The Design Office
+                        is located at Kolkata in the Patent Office. The
+                        Offices of The Patent Information System (PIS) and
+                        National Institute of Intellectual Property
+                        Management (NIIPM) are at Nagpur. The Controller
+                        General supervises the working of the Patents Act,
+                        1970, as amended, the Designs Act, 2000 and the
+                        Trade Marks Act, 1999 and also renders advice to the
+                        Government on matters relating to these subjects. In
+                        order to protect the Geographical Indications of
+                        goods a Geographical Indications Registry has been
+                        established in Chennai to administer the
+                        Geographical Indications of Goods (Registrationand
+                        Protection) Act, 1999 under the CGPDTM.</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <div class="icon">{% include 'templates/icons/page-facing-up-svgrepo-com.svg' %}
+                    <h4>Patent</h4>
+                </div>
+
+                <div class="icon">{% include 'templates/icons/building-svgrepo-com.svg' %}
+                    <h4>Buildings</h4>
+                </div>
+
+                <div class="icon">{% include 'templates/icons/computer-profit-technology-svgrepo-com.svg' %}
+                    <h4>Designs</h4>
+                </div>
+
+                <div class="icon">{% include 'templates/icons/globe-2-svgrepo-com.svg' %}
+                    <h4>Geographical indication</h4>
+                </div>
+
+                <div class="icon">{% include 'templates/icons/information-info-svgrepo-com.svg' %}</span>
+                    <h4>Informations</h4>
+                </div>
+
+                <div class="icon">{% include 'templates/icons/report-svgrepo-com.svg' %}
+                    <h4>Anual report</h4>
+                </div>
+                <div class="icon">{% include 'templates/icons/trademark-svgrepo-com.svg' %}
+                    <h4>Trade Mark</h4>
+                </div>
+                </div>
+
+
+            <div class="certificate">
+                <div class="cert-text">
+                    <h1>How To Download Your Certificate</h1>
+                </div>
+
+                <div class="icert">
+                    <div class="certIcon">
+                        <div class="insert">
+                            {% include 'templates/icons/computer-profit-technology-svgrepo-com.svg' %}
+                            <p>1. Go to certificate menu</p>
+                        </div>
+                    </div>
+
+                    <div class="certIcon">
+                        <div class="insert">
+                            {% include 'templates/icons/computer-profit-technology-svgrepo-com.svg' %}
+                            <p>2. Select your brand name & click to download button </p>
+                        </div>
+                    </div>
+
+                    <div class="certIcon">
+                        <div class="insert">
+                            {% include 'templates/icons/computer-profit-technology-svgrepo-com.svg' %}
+                            <p>3. Put your login id & password </p>
+                        </div>
+                    </div>
+
+                    <div class="certIcon">
+                        <div class="insert">
+                            {% include 'templates/icons/computer-profit-technology-svgrepo-com.svg' %}
+                            <p>4. Download your certificate</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% endblock content %}
