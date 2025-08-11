@@ -53,13 +53,14 @@ body {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
+  
 }
 
 .icons .icon {
   width: 120px;
   height: 130px;
   border: 1px solid #0000004f;
-  box-shadow: 0px 0px 2px black;
+  /* box-shadow: 0px 0px 2px black; */
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -68,22 +69,49 @@ body {
   align-items: center;
   text-align: center;
   transition: 0.3s ease-in-out;
+  
 }
 
-.icons .icon:hover {
-  box-shadow: 0px 0px 20px black;
+
+.icons .icon:hover{
+background-color: #003366;
+
+}
+
+
+.icons .icon:hover h4{
+color: #ffffff;
+}
+
+.icons .icon:hover svg path{
+  fill: #fff;
 }
 
 .icons .icon svg {
   height: 40px;
   width: 40px;
+  
+}
+
+
+.icons .icon svg path{
+  fill: #003366;
+  transition: 0.3s ease-in-out;
+
 }
 
 .icons .icon h4 {
   font-size: 14px;
   font-weight: 400;
+  color: black;
+  transition: 0.3s ease-in-out;
+
 }
 
+
+/* .icons .icon h4:hover{
+  color: white;
+} */
 /* End icon Section */
 
 /* Start certificate section */
