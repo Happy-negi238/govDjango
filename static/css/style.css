@@ -81,6 +81,7 @@ body {
   font-weight: 400;
 }
 .update-container {
+  margin-top: 50px;
   background-color: #f3f3f3;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -165,7 +166,7 @@ margin-top: 50px;
 /* start trademark section */
 
 .trademark {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .trademark .trad-head h2 {
@@ -179,8 +180,28 @@ margin-top: 50px;
   max-width: 1160px;
   /* background-color: red; */
   line-height: 22px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   margin: auto;
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 17px;
+  margin-top: 40px;
+}
+
+.trademark .para-detail {
+  margin-top: 50px;
+}
+
+.para-detail .para-head h3{
+  font-size: 30px;
+  color: #003366;
+
+}
+
+.para-detail .para-para{
+   max-width: 1160px;
+  /* background-color: red; */
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  margin: auto;
+  font-size: 17px;
+  margin-top: 20px; 
 }
