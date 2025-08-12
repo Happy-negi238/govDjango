@@ -1,60 +1,65 @@
 @font-face {
-    font-family: "open-sans";
-    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
-    font-family: "open-sans-semibold";
-    src: url(../fonts/open-sans/OpenSans-SemiBold.ttf);
+  font-family: "open-sans";
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+  font-family: "open-sans-semibold";
+  src: url(../fonts/open-sans/OpenSans-SemiBold.ttf);
 }
 
-header{
-    background-color: #003366;
-    color: white;
-    width: 100%;
-    height: 7vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    font-size: 16px;
-    font-family: "open-sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+header {
+  background-color: #003366;
+  color: white;
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.logo{
-    /* background-color: tomato; */
-    flex-basis: 15%;
-    height: 100%;
+.logo {
+  /* background-color: tomato; */
+  flex-basis: 15%;
+  height: 100%;
 }
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-.quicklinks{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    flex-basis: 75%;
-    /* background-color: red; */
-}
-
-.quicklinks> a{
-    color: white;
-    text-decoration: none;
+.quicklinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  flex-basis: 75%;
+  /* background-color: red; */
 }
 
-.login> button{
-    /* width: 70px;
+.quicklinks > a {
+  color: white;
+  text-decoration: none;
+}
+
+.quicklinks > a span {
+  font-size: 15px;
+}
+
+.login > button {
+  /* width: 70px;
     height: 40px; */
-    background-color: transparent;
-    border-width: 0px;
-    color: black;
-    font-size: 16px;
-    cursor:pointer;
-    font-weight: 500;
-    color: white;
-    font-family: "open-sans-semibold";
-    font-weight: 500;
-    font-style: normal;
+  background-color: transparent;
+  border-width: 0px;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  font-family: "open-sans-semibold";
+  font-weight: 500;
+  font-style: normal;
 }
