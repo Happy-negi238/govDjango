@@ -13,22 +13,29 @@
 <body>
   <section class="home-container">
     <div class="container">
-      <div class="project-image">
-        <div class="arrow">
-          <div class="left-arrow">
-            {% include 'templates/icons/left-arrow-back-svgrepo-com.svg' %}
-          </div>
-          <div class="right-arrow">
-            {% include 'templates/icons/right-arrow-next-svgrepo-com.svg' %}
-          </div>
+
+      <div class="slider" id="slider1">
+        <div class="slider-track">
+          <div class="slide"><img src="https://picsum.photos/id/1015/1600/900" alt=""></div>
+          <div class="slide"><img src="https://picsum.photos/id/1016/1600/900" alt=""></div>
+          <div class="slide"><img src="https://picsum.photos/id/1025/1600/900" alt=""></div>
+          <div class="slide"><img src="https://picsum.photos/id/1036/1600/900" alt=""></div>
         </div>
-        <div class="image">
-          <img src="../static/images/mountain-3.jpg" alt="" />
-          <img src="../static/images/mountain-3.jpg" alt="" />
-          <img src="../static/images/mountain-3.jpg" alt="" />
-          <img src="../static/images/mountain-3.jpg" alt="" />
-        </div>
+
+        <button class="nav prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="nav next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
+
       <div class="project-container">
         <div class="project-name">
           <div class="project-list">
