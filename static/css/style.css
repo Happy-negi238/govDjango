@@ -295,30 +295,60 @@ body {
 }
 
 .trademark .trad-para .para-head {
-  max-width: 1160px;
+  max-width: 1000px;
   /* background-color: red; */
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: 0.8px;
   margin: auto;
   font-size: 17px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.trademark .para-detail {
-  margin-top: 50px;
+.accordian {
+  /* background-color: blanchedalmond; */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 16px 10px 16px;
+  margin-top:  26px;
+  /* box-shadow: 1px 1px 4px 0 black; */
+  border: transparent;
+  border-bottom: 1px solid #003366;
 }
 
-.para-detail .para-head h3 {
-  font-size: 30px;
+.question{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.question .icon{
+  font-size: 25px;
+  color: #003366;
+  margin-right: 15px;
+  transition: transform 0.4s;
+}
+
+.accordian .question h3 {
+  font-size: 25px;
   color: #003366;
 }
 
-.para-detail .para-para {
+.accordian .answer{
   max-width: 1160px;
   /* background-color: red; */
-  line-height: 22px;
+  line-height: 23px;
   letter-spacing: 0.8px;
   margin: auto;
   font-size: 17px;
   margin-top: 20px;
+  text-align: justify;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s;
+}
+
+.icon.active{
+  transform: rotate(180deg);
 }
