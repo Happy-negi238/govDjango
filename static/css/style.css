@@ -122,8 +122,11 @@ body {
   font-family: system-ui;
   font-weight: 400;
 }
+
+/* start update section */
+
 .update-container {
-  margin-top: 50px;
+  margin-top: 150px;
   background-color: #f3f3f3;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -352,3 +355,72 @@ body {
 .icon.active{
   transform: rotate(180deg);
 }
+
+
+
+/* start slider  */
+
+
+  :root {
+    --slider-max-w: 960px;
+    --nav-size: 44px;
+    --shadow: 0 8px 24px rgba(0,0,0,.18);
+    --radius: 16px;
+    --transition: 500ms ease;
+  }
+
+
+
+  .slider {
+    width: min(100%, var(--slider-max-w));
+    aspect-ratio: 16 / 9;
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: #000;
+  }
+
+  .slider-track {
+    height: 100%;
+    display: flex;
+    will-change: transform;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--nav-size);
+    height: var(--nav-size);
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,.75);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    z-index: 2;
+  }
+
+  .nav:hover { background: #fff; }
+  .nav svg { width: 22px; height: 22px; }
+
+  .nav.prev { left: 12px; }
+  .nav.next { right: 12px; }
+
+
+  /* end slider */
