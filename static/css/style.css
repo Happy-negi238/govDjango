@@ -340,6 +340,8 @@ body {
 
 .project .blink span a {
   text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
 .project .blink span a:hover {
