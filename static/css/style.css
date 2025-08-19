@@ -467,3 +467,9 @@ body {
 .icon.active {
   transform: rotate(180deg);
 }
+
+
+.accordian .answer ol li{
+  margin-top: 10px;
+  list-style-type: decimal;
+}
