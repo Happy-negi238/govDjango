@@ -218,9 +218,9 @@ body {
   padding: 0px 6px 0px 1px ;
   /* width: 200px; */
   /* border-radius: 5px; */
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  font-size: 9px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  font-size: 8px;
   margin-left: 5px;
   clip-path: polygon(100% 0%, 78% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
   /* text-align: center; */
@@ -486,8 +486,6 @@ body {
   transform: rotate(180deg);
 }
 
-
 .accordian .answer ol li{
-  margin-top: 10px;
-  list-style-type: decimal;
+  margin-top: 15px;text-align: start;
 }
