@@ -137,10 +137,10 @@ table thead th:nth-child(2) {
 }
 
 form input {
-  padding: 28px 8px 8px 8px;
+  padding: 20px 8px 8px 8px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #00000033;
+  border-bottom: 1px solid #6d6d6d;
   width: 100%;
   background-color: #f6f8fa;
   margin-top: 15px;
@@ -148,6 +148,15 @@ form input {
 
 form input::placeholder {
   font-size: 13px;
+  color: var(--bkl, #6d6d6d);
+}
+
+.form-heading h2{
+  margin-top: 5px;
+}
+
+.form-heading p{
+  color: #5f5f5f;
 }
 
 .form form button {
@@ -156,14 +165,20 @@ form input::placeholder {
   outline: none;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-top: 25px;
   cursor: pointer;
   transition: 0.2s linear;
   margin-bottom: 15px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .form form button:hover {
-  background-color: #003366da;
-  color: #ffffffda;
+  background-color: #002e5c;
+}
+
+.alert{
+  visibility: hidden;
 }
