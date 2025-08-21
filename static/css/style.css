@@ -212,7 +212,6 @@ body {
 
 .project-list ul li::after {
   content: "new";
-  /* background-image: linear-gradient(to right, rgba(255, 166, 0, 0.514),rgba(0, 0, 255, 0.473), rgba(255, 0, 0, 0.514)); */
   background-color: red;
   color: white;
   padding: 0px 6px 0px 1px;

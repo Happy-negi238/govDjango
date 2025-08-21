@@ -11,3 +11,5 @@ def about(request):
 
 def certificate(request):
     return render(request, 'certificate.html')
+def normal(request):
+    return render(request, 'try.html')
