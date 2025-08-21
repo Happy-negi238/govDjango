@@ -1,555 +1,543 @@
-{% extends "base.html" %} {% block content %} {% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %} {% load static %}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INTELLECTUAL</title>
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-  <link rel="shortcut icon" href="{% static 'images/android-chrome-512x512.png' %}" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
- </head>
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+{% endblock %}
 
-<body>
-  <section class="home-container">
-    <div class="container">
-
-      <div class="slider" id="slider1">
-        <div class="slider-track">
-          <div class="slide"><img src="../static/images/Infra-Freepik.webp" alt=""></div>
-          <div class="slide"><img src="../static/images/mountain-3.jpg" alt=""></div>
-          <div class="slide"><img src="../static/images/infra2.avif" alt=""></div>
-          <div class="slide"><img src="../static/images/infra1.jpg" alt=""></div>
-        </div>
-
-        <button class="nav prev" aria-label="Previous slide">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button class="nav next" aria-label="Next slide">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
+{% block content %}
+<section class="home-container">
+  <div class="container">
+    <div class="slider" id="slider1">
+      <div class="slider-track">
+        <div class="slide"><img src="../static/images/Infra-Freepik.webp" alt=""></div>
+        <div class="slide"><img src="../static/images/mountain-3.jpg" alt=""></div>
+        <div class="slide"><img src="../static/images/infra2.avif" alt=""></div>
+        <div class="slide"><img src="../static/images/infra1.jpg" alt=""></div>
       </div>
 
-      <div class="project-container">
-        <div class="project-name">
-          <div class="project-h4">
-            <h4>Approved Projects</h4>
-            <hr>
-          </div>
-          <div class="project-list">
-            <ul>
-              <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
-                Property Administration and Legislations" to be conducted in collaboration with National Law University
-                (NLU), Delhi for the year 2025-26.</li>
-
-              <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
-                Property Administration and Legislations" to be conducted in collaboration with National Law University
-                (NLU), Delhi for the year 2025-26.</li>
-              <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
-                Property Administration and Legislations" to be conducted in collaboration with National Law University
-                (NLU), Delhi for the year 2025-26.</li>
-              <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
-              <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
-              <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
+      <button class="nav prev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="nav next" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
     </div>
-  </section>
 
-  <section class="update-container">
-    <div class="update">
-      <div class="heading">
-        <h1>New Updates</h1>
+    <div class="project-container">
+      <div class="project-name">
+        <div class="project-h4">
+          <h4>Approved Projects</h4>
+          <hr>
+        </div>
+        <div class="project-list">
+          <ul>
+            <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
+              Property Administration and Legislations" to be conducted in collaboration with National Law University
+              (NLU), Delhi for the year 2025-26.</li>
+
+            <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
+              Property Administration and Legislations" to be conducted in collaboration with National Law University
+              (NLU), Delhi for the year 2025-26.</li>
+            <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
+              Property Administration and Legislations" to be conducted in collaboration with National Law University
+              (NLU), Delhi for the year 2025-26.</li>
+            <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
+            <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
+            <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
+
+          </ul>
+        </div>
       </div>
-
-      <div class="project">
-
-        <div class="blink one">
-          <span>
-            <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-              2025</a> ||
-            <a href=""> Railway RRB Technician Recruitment 2025</a>
-          </span>
-        </div>
-
-        <div class="blink two">
-          <span>
-            <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-              2025</a> ||
-            <a href=""> Railway RRB Technician Recruitment 2025</a>
-          </span>
-        </div>
-
-        <div class="blink three">
-          <span>
-            <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-              2025</a> ||
-            <a href=""> Railway RRB Technician Recruitment 2025</a>
-          </span>
-        </div>
-
-        <div class="blink one">
-          <span>
-            <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-              2025</a> ||
-            <a href=""> Railway RRB Technician Recruitment 2025</a>
-          </span>
-        </div>
-
-        <div class="blink two">
-          <span>
-            <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-              2025</a> ||
-            <a href=""> Railway RRB Technician Recruitment 2025</a>
-          </span>
-        </div>
-
-        <div class="blink three">
-          <span>
-            <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-              2025</a> ||
-            <a href=""> Railway RRB Technician Recruitment 2025</a>
-          </span>
-        </div>
-
-      </div>
-
     </div>
-  </section>
 
+  </div>
+</section>
 
-  <section class="board-container">
+<section class="update-container">
+  <div class="update">
     <div class="heading">
-      <h1>Legal Board Member</h1>
+      <h1>New Updates</h1>
     </div>
 
-    <div class="card-section">
-      <div class="profile">
-        <img src="../static/images/Dheeraj.png" alt="">
-        <div class="member-detail">
-          <h4>Mr. Dheeraj Bansal</h4>
-          <!-- <p>Paragraph</p> -->
-        </div>
-      </div>
-      <div class="profile">
-        <img src="../static/images/Kabir.png" alt="">
-        <div class="member-detail">
-          <h4>Mr. Kabir Upadhyay</h4>
-          <!-- <p>Paragraph</p> -->
-        </div>
-      </div>
-      <div class="profile">
-        <img src="../static/images/Reetu.png" alt="">
-        <div class="member-detail">
-          <h4>Mrs. Reetu Singhaniya</h4>
-          <!-- <p>Paragraph</p> -->
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="project">
 
-  <section class="trademark">
-    <div class="trad-head">
-      <h2>All Business Class Information</h2>
-    </div>
-
-    <div class="trad-para">
-      <div class="para-head">
-        <p>Protecting your brand and intellectual property is essential for long-term business success. One critical
-          step in this process is conducting a thorough trademark class search. Trademarks are valuable business assets
-          that provide legal protection and grant exclusive rights over your brand name, logo, or slogan. Understanding
-          trademark classifications and conducting a proper trademark category analysis are key to successful trademark
-          registration and enforcement.</p>
+      <div class="blink one">
+        <span>
+          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
+            2025</a> ||
+          <a href=""> Railway RRB Technician Recruitment 2025</a>
+        </span>
       </div>
 
-      <div class="accordian">
-        <div class="question">
-          <h3>What is a Trademark?</h3>
-          <i class="ri-arrow-down-s-fill icon"></i>
-        </div>
-        <div class="answer">
-          <p>A trademark is a unique word, name, symbol, logo, or slogan that identifies and distinguishes the goods or
-            services of one party from those of others in the market. Trademarks play a vital role in brand recognition
-            and customer trust. When registered, a trademark offers legal protection against unauthorized use, allowing
-            the owner to prevent others from exploiting the mark without consent. Trademarks can consist of words,
-            phrases, symbols, designs, or a combination of these elements.
-          </p>
-        </div>
+      <div class="blink two">
+        <span>
+          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
+            2025</a> ||
+          <a href=""> Railway RRB Technician Recruitment 2025</a>
+        </span>
       </div>
 
-      <div class="accordian">
-        <div class="question">
-          <h3>What is a Trademark Class?</h3>
-          <i class="ri-arrow-down-s-fill icon"></i>
-        </div>
-        <div class="answer">
-          <p>Trademarks are classified into various categories known as trademark classes, based on the nature of the
-            goods or services they represent. This classification system, called the Nice Classification, was
-            established by the World Intellectual Property Organization (WIPO). It divides goods and services into 45
-            distinct classes — 34 for goods and 11 for services. Properly identifying and assigning your trademark to
-            the correct class is essential for ensuring comprehensive legal protection and avoiding conflicts during the
-            registration process.
-          </p>
-        </div>
+      <div class="blink three">
+        <span>
+          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
+            2025</a> ||
+          <a href=""> Railway RRB Technician Recruitment 2025</a>
+        </span>
       </div>
 
-      <div class="accordian">
-        <div class="question">
-          <h3>Trademark Class List</h3>
-          <i class="ri-arrow-down-s-fill icon"></i>
-        </div>
-        <div class="answer">
-          <p>The trademark class list provides a structured framework for categorizing a broad range of goods and
-            services. This system is designed to simplify the trademark registration process and ensure clarity in
-            intellectual property rights. For businesses seeking to protect their brand, it is crucial to understand the
-            specifics of this classification system. Accurate classification helps ensure that trademarks are registered
-            appropriately and are well-protected against potential infringement.
-          </p>
-        </div>
+      <div class="blink one">
+        <span>
+          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
+            2025</a> ||
+          <a href=""> Railway RRB Technician Recruitment 2025</a>
+        </span>
       </div>
 
-      <div class="accordian">
-        <div class="question">
-          <h3>Trademark Classification</h3>
-          <i class="ri-arrow-down-s-fill icon"></i>
-        </div>
-        <div class="answer">
+      <div class="blink two">
+        <span>
+          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
+            2025</a> ||
+          <a href=""> Railway RRB Technician Recruitment 2025</a>
+        </span>
+      </div>
 
-          <table>
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Description</th>
-              </tr>
-
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>Trademark Class 1 </td>
-                <td>Chemical used in industry, science, photography, agriculture, horticulture and forestry; unprocessed
-                  plastics; chemical substances for preserving foodstuffs;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 2 </td>
-                <td>Paints; varnishes; preservatives against rust and against deterioration of wood; colorants; metals
-                  in
-                  foil and powder form for painters; decorators; printers and artists;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 3 </td>
-                <td>Bleaching preparations and substances for laundry use; cleaning; polishing; abrasive preparations;
-                  soaps; perfumery, essential oils, cosmetics, hair lotions;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 4 </td>
-                <td>Industrial oils and greases; lubricants; dust absorbing, wetting and binding compositions; fuels
-                  (including motor spirit) and illuminants; candles, wicks;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 5 </td>
-                <td>Industrial oils and greases; lubricants; dust absorbing, wetting and binding compositions; fuels
-                  (including motor spirit) and illuminants; candles, wicks;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 6 </td>
-                <td>Common metals and their alloys; metal building materials; small items of metal hardware; pipes and
-                  tubes of metal; goods of metal not included in other classes;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 7 </td>
-                <td>Machines and machine tools; machine coupling and transmission components; agricultural implements
-                  other than hand-operated; incubators for eggs;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 8 </td>
-                <td>Hand tools and implements (hand-operated); cutlery; side arms; razors
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 9</td>
-                <td>Scientific, electric, photographicl, measuring, apparatus for recording, transmission or
-                  reproduction
-                  of sound or images; data processing equipment and computers;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 10 </td>
-                <td>Surgical, medical, dental and veterinary apparatus and instruments, artificial limbs, eyes and
-                  teeth;
-                  orthopaedic articles; suture materials;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 11 </td>
-                <td>Apparatus for lighting, heating, steam generating, cooking, refrigerating, drying ventilating, water
-                  supply and sanitary purposes
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 12</td>
-                <td>Vehicles; apparatus for locomotion by land, air or water
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 13</td>
-                <td>Firearms; ammunition and projectiles; explosives; fire work
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 14</td>
-                <td>Precious metals and their alloys and goods in precious metals; jewellery, precious stones;
-                  horological
-                  and other chronometric instruments
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 15</td>
-                <td>Musical instruments
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 16</td>
-                <td>Paper, cardboard and goods made from these materials; printed matter; stationery; brushes;
-                  typewriters
-                  and office requisites; plastic materials for packaging;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 17</td>
-                <td>Rubber, asbestos, mica and goods made from these materials; plastics in extruded form for use in
-                  manufacture; packing, stopping and insulating materials; flexible pipes;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 18</td>
-                <td>Leather and imitations of leathe; animal skins, hides, trunks and travelling bags; umbrellas,
-                  parasols and walking sticks; whips, harness and saddlery;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 19</td>
-                <td>Building materials, (non-metallic), non-metallic rigid pipes for building; asphalt, pitch and
-                  bitumen; non-metallic transportable buildings; monuments, not of metal.
-                </td>
-              </tr>
-
-
-              <tr>
-                <td>Trademark Class 20</td>
-                <td>Furniture, mirrors, picture frames; goods of wood, cork, reed, cane, wicker, horn, bone, ivory,
-                  whalebone, shell, amber, mother- of-pearl, meerschaum or of plastics
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 21 </td>
-                <td>Household or kitchen utensils and containers; combs and sponges; articles for cleaning purposes;
-                  unworked or semi-worked glass; glassware and earthenware;
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 22 </td>
-                <td>Ropes, string, nets, tents, awnings, tarpaulins, sails, sacks and bags, padding and stuffing
-                  materials(except of rubber or plastics); raw fibrous textile materials
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 23</td>
-                <td>Yarns and threads, for textile use
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 24</td>
-                <td>Textiles and textile goods, not included in other classes; bed and table covers.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 25</td>
-                <td>Clothing, footwear, headgear
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 26</td>
-                <td>Lace and embroidery, ribbons and braid; buttons, hooks and eyes, pins and needles; artificial
-                  flowers
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 27</td>
-                <td>Carpets, rugs, mats and matting, linoleum and other materials for covering existing floors; wall
-                  hangings(non-textile)
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 28</td>
-                <td>Games and playthings, gymnastic and sporting articles not included in other classes; decorations for
-                  Christmas trees
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 29</td>
-                <td>Meat, fish, poultry and game; meat extracts; preserved, dried and cooked fruits and vegetables;
-                  jams, fruit sauces; eggs, milk and milk products; edible oils and fats
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 30 </td>
-                <td>Coffee, tea, cocoa, sugar, rice, tapioca, sago; bread, pastry and confectionery, ices; honey,
-                  treacle; yeast, baking powder; salt, mustard; vinegar; spices; ice
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 31 </td>
-                <td>Agricultural, horticultural and forestry products and grains; live animals; fresh fruits and
-                  vegetables; seeds, natural plants and flowers; foodstuffs for animals, malt
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 32</td>
-                <td>Beers, mineral and aerated waters, and other non-alcoholic drinks; fruit drinks and fruit juices;
-                  syrups and other preparations for making beverages
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 33</td>
-                <td>Alcoholic beverages(except beers)
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 34 </td>
-                <td>Tobacco, smokers' articles, matches
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 35 </td>
-                <td>Advertising, business management, business administration, office functions.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 36</td>
-                <td>Insurance, financial affairs; monetary affairs; real estate affairs.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 37</td>
-                <td>Building construction; repair; installation services.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 38</td>
-                <td>Telecommunications.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 39 </td>
-                <td>Transport; packaging and storage of goods; travel arrangement.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 40 </td>
-                <td>Treatment of materials.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 41</td>
-                <td>Education; providing of training; entertainment; sporting and cultural activities.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 42</td>
-                <td>Scientific, design and technological services; industrial analysis and research services; design and
-                  development of computer hardware and software.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 43</td>
-                <td>Services for providing food and drink; temporary accommodation.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 44 </td>
-                <td>Medical services, veterinary services, hygienic and beauty care for human beings or animals;
-                  agriculture, horticulture and forestry services.
-                </td>
-              </tr>
-
-              <tr>
-                <td>Trademark Class 45 </td>
-                <td>Legal services; security services for the protection of property and individuals; personal and
-                  social services rendered by others to meet the needs of individuals.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="blink three">
+        <span>
+          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
+            2025</a> ||
+          <a href=""> Railway RRB Technician Recruitment 2025</a>
+        </span>
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
+
+<section class="board-container">
+  <div class="heading">
+    <h1>Legal Board Member</h1>
+  </div>
+
+  <div class="card-section">
+    <div class="profile">
+      <img src="../static/images/Dheeraj.png" alt="">
+      <div class="member-detail">
+        <h4>Mr. Dheeraj Bansal</h4>
+        <!-- <p>Paragraph</p> -->
+      </div>
+    </div>
+    <div class="profile">
+      <img src="../static/images/Kabir.png" alt="">
+      <div class="member-detail">
+        <h4>Mr. Kabir Upadhyay</h4>
+        <!-- <p>Paragraph</p> -->
+      </div>
+    </div>
+    <div class="profile">
+      <img src="../static/images/Reetu.png" alt="">
+      <div class="member-detail">
+        <h4>Mrs. Reetu Singhaniya</h4>
+        <!-- <p>Paragraph</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trademark">
+  <div class="trad-head">
+    <h2>All Business Class Information</h2>
+  </div>
+
+  <div class="trad-para">
+    <div class="para-head">
+      <p>Protecting your brand and intellectual property is essential for long-term business success. One critical
+        step in this process is conducting a thorough trademark class search. Trademarks are valuable business assets
+        that provide legal protection and grant exclusive rights over your brand name, logo, or slogan. Understanding
+        trademark classifications and conducting a proper trademark category analysis are key to successful trademark
+        registration and enforcement.</p>
+    </div>
+
+    <div class="accordian">
+      <div class="question">
+        <h3>What is a Trademark?</h3>
+        <i class="ri-arrow-down-s-fill icon"></i>
+      </div>
+      <div class="answer">
+        <p>A trademark is a unique word, name, symbol, logo, or slogan that identifies and distinguishes the goods or
+          services of one party from those of others in the market. Trademarks play a vital role in brand recognition
+          and customer trust. When registered, a trademark offers legal protection against unauthorized use, allowing
+          the owner to prevent others from exploiting the mark without consent. Trademarks can consist of words,
+          phrases, symbols, designs, or a combination of these elements.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordian">
+      <div class="question">
+        <h3>What is a Trademark Class?</h3>
+        <i class="ri-arrow-down-s-fill icon"></i>
+      </div>
+      <div class="answer">
+        <p>Trademarks are classified into various categories known as trademark classes, based on the nature of the
+          goods or services they represent. This classification system, called the Nice Classification, was
+          established by the World Intellectual Property Organization (WIPO). It divides goods and services into 45
+          distinct classes — 34 for goods and 11 for services. Properly identifying and assigning your trademark to
+          the correct class is essential for ensuring comprehensive legal protection and avoiding conflicts during the
+          registration process.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordian">
+      <div class="question">
+        <h3>Trademark Class List</h3>
+        <i class="ri-arrow-down-s-fill icon"></i>
+      </div>
+      <div class="answer">
+        <p>The trademark class list provides a structured framework for categorizing a broad range of goods and
+          services. This system is designed to simplify the trademark registration process and ensure clarity in
+          intellectual property rights. For businesses seeking to protect their brand, it is crucial to understand the
+          specifics of this classification system. Accurate classification helps ensure that trademarks are registered
+          appropriately and are well-protected against potential infringement.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordian">
+      <div class="question">
+        <h3>Trademark Classification</h3>
+        <i class="ri-arrow-down-s-fill icon"></i>
+      </div>
+      <div class="answer">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Trademark Class 1 </td>
+              <td>Chemical used in industry, science, photography, agriculture, horticulture and forestry; unprocessed
+                plastics; chemical substances for preserving foodstuffs;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 2 </td>
+              <td>Paints; varnishes; preservatives against rust and against deterioration of wood; colorants; metals
+                in
+                foil and powder form for painters; decorators; printers and artists;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 3 </td>
+              <td>Bleaching preparations and substances for laundry use; cleaning; polishing; abrasive preparations;
+                soaps; perfumery, essential oils, cosmetics, hair lotions;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 4 </td>
+              <td>Industrial oils and greases; lubricants; dust absorbing, wetting and binding compositions; fuels
+                (including motor spirit) and illuminants; candles, wicks;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 5 </td>
+              <td>Industrial oils and greases; lubricants; dust absorbing, wetting and binding compositions; fuels
+                (including motor spirit) and illuminants; candles, wicks;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 6 </td>
+              <td>Common metals and their alloys; metal building materials; small items of metal hardware; pipes and
+                tubes of metal; goods of metal not included in other classes;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 7 </td>
+              <td>Machines and machine tools; machine coupling and transmission components; agricultural implements
+                other than hand-operated; incubators for eggs;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 8 </td>
+              <td>Hand tools and implements (hand-operated); cutlery; side arms; razors
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 9</td>
+              <td>Scientific, electric, photographicl, measuring, apparatus for recording, transmission or
+                reproduction
+                of sound or images; data processing equipment and computers;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 10 </td>
+              <td>Surgical, medical, dental and veterinary apparatus and instruments, artificial limbs, eyes and
+                teeth;
+                orthopaedic articles; suture materials;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 11 </td>
+              <td>Apparatus for lighting, heating, steam generating, cooking, refrigerating, drying ventilating, water
+                supply and sanitary purposes
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 12</td>
+              <td>Vehicles; apparatus for locomotion by land, air or water
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 13</td>
+              <td>Firearms; ammunition and projectiles; explosives; fire work
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 14</td>
+              <td>Precious metals and their alloys and goods in precious metals; jewellery, precious stones;
+                horological
+                and other chronometric instruments
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 15</td>
+              <td>Musical instruments
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 16</td>
+              <td>Paper, cardboard and goods made from these materials; printed matter; stationery; brushes;
+                typewriters
+                and office requisites; plastic materials for packaging;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 17</td>
+              <td>Rubber, asbestos, mica and goods made from these materials; plastics in extruded form for use in
+                manufacture; packing, stopping and insulating materials; flexible pipes;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 18</td>
+              <td>Leather and imitations of leathe; animal skins, hides, trunks and travelling bags; umbrellas,
+                parasols and walking sticks; whips, harness and saddlery;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 19</td>
+              <td>Building materials, (non-metallic), non-metallic rigid pipes for building; asphalt, pitch and
+                bitumen; non-metallic transportable buildings; monuments, not of metal.
+              </td>
+            </tr>
 
 
-  <script src="{% static 'js/index.js' %}"></script>
-</body>
+            <tr>
+              <td>Trademark Class 20</td>
+              <td>Furniture, mirrors, picture frames; goods of wood, cork, reed, cane, wicker, horn, bone, ivory,
+                whalebone, shell, amber, mother- of-pearl, meerschaum or of plastics
+              </td>
+            </tr>
 
-</html>
-{% endblock content %}
+            <tr>
+              <td>Trademark Class 21 </td>
+              <td>Household or kitchen utensils and containers; combs and sponges; articles for cleaning purposes;
+                unworked or semi-worked glass; glassware and earthenware;
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 22 </td>
+              <td>Ropes, string, nets, tents, awnings, tarpaulins, sails, sacks and bags, padding and stuffing
+                materials(except of rubber or plastics); raw fibrous textile materials
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 23</td>
+              <td>Yarns and threads, for textile use
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 24</td>
+              <td>Textiles and textile goods, not included in other classes; bed and table covers.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 25</td>
+              <td>Clothing, footwear, headgear
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 26</td>
+              <td>Lace and embroidery, ribbons and braid; buttons, hooks and eyes, pins and needles; artificial
+                flowers
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 27</td>
+              <td>Carpets, rugs, mats and matting, linoleum and other materials for covering existing floors; wall
+                hangings(non-textile)
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 28</td>
+              <td>Games and playthings, gymnastic and sporting articles not included in other classes; decorations for
+                Christmas trees
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 29</td>
+              <td>Meat, fish, poultry and game; meat extracts; preserved, dried and cooked fruits and vegetables;
+                jams, fruit sauces; eggs, milk and milk products; edible oils and fats
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 30 </td>
+              <td>Coffee, tea, cocoa, sugar, rice, tapioca, sago; bread, pastry and confectionery, ices; honey,
+                treacle; yeast, baking powder; salt, mustard; vinegar; spices; ice
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 31 </td>
+              <td>Agricultural, horticultural and forestry products and grains; live animals; fresh fruits and
+                vegetables; seeds, natural plants and flowers; foodstuffs for animals, malt
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 32</td>
+              <td>Beers, mineral and aerated waters, and other non-alcoholic drinks; fruit drinks and fruit juices;
+                syrups and other preparations for making beverages
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 33</td>
+              <td>Alcoholic beverages(except beers)
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 34 </td>
+              <td>Tobacco, smokers' articles, matches
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 35 </td>
+              <td>Advertising, business management, business administration, office functions.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 36</td>
+              <td>Insurance, financial affairs; monetary affairs; real estate affairs.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 37</td>
+              <td>Building construction; repair; installation services.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 38</td>
+              <td>Telecommunications.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 39 </td>
+              <td>Transport; packaging and storage of goods; travel arrangement.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 40 </td>
+              <td>Treatment of materials.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 41</td>
+              <td>Education; providing of training; entertainment; sporting and cultural activities.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 42</td>
+              <td>Scientific, design and technological services; industrial analysis and research services; design and
+                development of computer hardware and software.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 43</td>
+              <td>Services for providing food and drink; temporary accommodation.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 44 </td>
+              <td>Medical services, veterinary services, hygienic and beauty care for human beings or animals;
+                agriculture, horticulture and forestry services.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Trademark Class 45 </td>
+              <td>Legal services; security services for the protection of property and individuals; personal and
+                social services rendered by others to meet the needs of individuals.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
