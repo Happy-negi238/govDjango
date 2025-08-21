@@ -8,12 +8,15 @@
 
 body {
   background-color: #f6f8fa;
+  /* overflow: hidden; */
+
 }
 .certificate {
   padding-top: 8%;
   height: 100%;
   width: 65%;
   margin: auto;
+  position: relative;
 }
 
 .certificate-heading h3 {
@@ -42,7 +45,6 @@ tbody td {
 
 .certificate-table table tbody td {
   font-size: 14px;
-
 }
 
 .certificate-table table tbody td:nth-child(1),
@@ -66,28 +68,102 @@ table thead th:nth-child(2) {
   cursor: pointer;
 }
 
-.important{
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.important {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
-.important .english{
-    display: flex;
-    align-items: center;
+.important .english {
+  display: flex;
+  align-items: center;
 }
 
-.important .english{
-    font-size: 15px;
+.important .english {
+  font-size: 15px;
 }
 
-.important .hindi{
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
+.important .hindi {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.important .hindi p{
-    font-size: 14px;
+.important .hindi p {
+  font-size: 14px;
+}
+
+.form {
+  border: 1px solid #00000033;
+  padding: 15px;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.575);
+  position: absolute;
+  top: 58%;
+  left: 200%;
+  transform: translate(-50%, -50%);
+  z-index: 19;
+  display: none;
+  background-color: #f6f8fa;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-heading h2 {
+  text-align: center;
+  color: #003366;
+}
+
+.form-heading img {
+  height: 60px;
+  width: 60px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0px 20px 0px 20px;
+}
+
+form input {
+  padding: 28px 8px 8px 8px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00000033;
+  width: 100%;
+  background-color: #f6f8fa;
+  margin-top: 15px;
+}
+
+form input::placeholder {
+  font-size: 13px;
+}
+
+.form form button {
+  background-color: #003366;
+  color: white;
+  outline: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-bottom: 15px;
+}
+
+.form form button:hover {
+  background-color: #003366da;
+  color: #ffffffda;
 }
