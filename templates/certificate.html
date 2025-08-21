@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/certificate.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="certificate">
+        <div class="certificate-heading">
+            <h3>Download Your Certificate</h3>
+        </div>
+
+        <div class="certificate-table">
+        
+            <table>        
+            <thead>
+                <th>Sr. no.</th>
+                <th>File Name</th>
+                <th>Download</th>
+            </thead>
+
+            <tbody>
+                <td>1</td>
+                <td>Achievements by Office of CGPDTM</td>
+                <td><a href="#">{% include 'icons/pdf1.svg' %}</a></td>
+            </tbody>
+
+            <tbody>
+                <td>2</td>
+                <td>Achievements by Office of CGPDTM</td>
+                <td><a href="#">{% include 'icons/pdf1.svg' %}</a></td>
+            </tbody>
+
+            <tbody>
+                <td>3</td>
+                <td>Achievements by Office of CGPDTM</td>
+                <td><a href="#">{% include 'icons/pdf1.svg' %}</a></td>
+            </tbody>
+
+            <tbody>
+                <td>4</td>
+                <td>Achievements by Office of CGPDTM</td>
+                <td><a href="#">{% include 'icons/pdf1.svg' %}</a></td>
+            </tbody>
+
+            <tbody>
+                <td>5</td>
+                <td>Achievements by Office of CGPDTM</td>
+                <td><a href="#">{% include 'icons/pdf1.svg' %}</a></td>
+            </tbody>
+
+            </table>
+
+
+        </div>
+
+        <div class="important">
+            <div class="english">
+                <h3>Note :- </h3>
+                <p>Thees pdf are available for 2 month. Please save in your device.</p>
+            </div>
+
+            <div class="hindi">
+                <h3>सूचना :- </h3>
+                <p>ये पीडीएफ़ 2 महीने के लिए उपलब्ध हैं। कृपया इन्हें अपने डिवाइस में सेव करें।</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock content%}
