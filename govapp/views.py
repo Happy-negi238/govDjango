@@ -7,3 +7,9 @@ def index(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def certificate(request):
+    return render(request, 'certificate.html')
+def normal(request):
+    return render(request, 'try.html')
