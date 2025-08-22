@@ -4,13 +4,11 @@
   font-family: "open-sans-semibold";
   src: url(../fonts/open-sans/OpenSans-SemiBold.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   width: 100%;
   /* min-height: 300vh; */
