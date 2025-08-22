@@ -47,6 +47,10 @@ body {
   border-bottom: 1px solid #00000033;
 }
 
+.certificate .search-icon input::placeholder{
+  font-size: 12.5px;
+}
+
 .certificate .search-icon i {
   padding: 11.5px 15px;
   border-radius: 0px 10px 10px 0px;
@@ -57,6 +61,7 @@ body {
   border-bottom: 1px solid #00000033;
   outline: none;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .certificate-table {
@@ -162,8 +167,9 @@ table thead th:nth-child(2) {
 }
 
 .form-heading img {
-  height: 60px;
-  width: 60px;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
 }
 
 .form-heading span {
