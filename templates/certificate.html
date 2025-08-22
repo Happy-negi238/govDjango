@@ -10,6 +10,11 @@
         <h3>Download Your Certificate</h3>
     </div>
 
+    <div class="search-icon">
+        <input id="search" type="text" placeholder="Search pdf name">
+        <i id="search-icon" class="ri-search-line"></i>
+    </div>
+
     <div class="certificate-table">
 
         <table>
@@ -20,37 +25,79 @@
             </thead>
 
             <tbody>
-                <td>1</td>
-                <td>Achievements by Office of CGPDTM</td>
-                <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-            </tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
 
-            <tbody>
-                <td>2</td>
-                <td>Achievements by Office of CGPDTM</td>
-                <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-            </tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
 
-            <tbody>
-                <td>3</td>
-                <td>Achievements by Office of CGPDTM</td>
-                <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-            </tbody>
+                <tr>
+                    <td>3</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
 
-            <tbody>
-                <td>4</td>
-                <td>Achievements by Office of CGPDTM</td>
-                <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-            </tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
 
-            <tbody>
-                <td>5</td>
-                <td>Achievements by Office of CGPDTM</td>
-                <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                <tr>
+                    <td>5</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
             </tbody>
 
         </table>
 
+        <table>
+            <thead>
+                <th>Sr. no.</th>
+                <th>File Name</th>
+                <th>Download</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Achievements by Office of CGPDTM</td>
+                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
+                </tr>
+            </tbody>
+
+        </table>
 
     </div>
 
@@ -69,8 +116,11 @@
     <div class="form" id="form">
         <div class="form-heading">
             <img src="../static/images/android-chrome-512x512.png" alt="">
-            <h2>Download for PDF</h2>
+            <h2>Download PDF</h2>
             <p>Simply fill out this form</p>
+            <span id="cross">
+                {% include 'icons/cross.svg' %}
+            </span>
         </div>
         <form action="">
             <input onblur="validation(this)" oninput="validation(this)" type="text" placeholder="Enter Your Name">

@@ -7,16 +7,17 @@
 }
 
 body {
+  /* background-color: #808080; */
   background-color: #f6f8fa;
-  /* overflow: hidden; */
-
+  /* overflow: visible; */
 }
 .certificate {
   padding-top: 8%;
   height: 100%;
-  width: 65%;
+  width: 100%;
   margin: auto;
-  position: relative;
+  /* position: relative;
+  z-index: 16;       */
 }
 
 .certificate-heading h3 {
@@ -24,12 +25,49 @@ body {
   font-size: 26px;
 }
 
+.certificate .search-icon {
+  position: absolute;
+  width: fit-content;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.certificate .search-icon input {
+  padding: 10px 15px;
+  outline: none;
+  width: 250px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #f6f8fa;
+  border-right: none;
+  border-left: 1px solid #00000033;
+  border-top: 1px solid #00000033;
+  border-bottom: 1px solid #00000033;
+}
+
+.certificate .search-icon i {
+  padding: 11.5px 15px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #f6f8fa;
+  border-left: none;
+  border-right: 1px solid #00000033;
+  border-top: 1px solid #00000033;
+  border-bottom: 1px solid #00000033;
+  outline: none;
+  font-size: 13px;
+}
+
 .certificate-table {
-  padding-top: 50px;
+  padding-top: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  /* background-color: red; */
+  width: 80%;
+  gap: 50px;
 }
 
 .certificate-table table {
@@ -98,15 +136,15 @@ table thead th:nth-child(2) {
 .form {
   border: 1px solid #00000033;
   padding: 15px;
-  width: 50%;
+  width: 35%;
   margin: auto;
   border-radius: 5px;
-  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.575);
-  position: absolute;
-  top: 58%;
-  left: 200%;
+  box-shadow: 0px 0px 7px 0px #000000b6;
+  position: fixed;
+  top: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 19;
+  z-index: 199;
   display: none;
   background-color: #f6f8fa;
 }
@@ -128,6 +166,18 @@ table thead th:nth-child(2) {
   width: 60px;
 }
 
+.form-heading span {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.form-heading span svg {
+  height: 40px;
+  width: 40px;
+}
+
 .form form {
   display: flex;
   flex-direction: column;
@@ -137,10 +187,10 @@ table thead th:nth-child(2) {
 }
 
 form input {
-  padding: 20px 8px 8px 8px;
+  padding: 15px 8px 8px 8px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #6d6d6d;
+  border-bottom: 1px solid #00000033;
   width: 100%;
   background-color: #f6f8fa;
   margin-top: 15px;
@@ -148,15 +198,7 @@ form input {
 
 form input::placeholder {
   font-size: 13px;
-  color: var(--bkl, #6d6d6d);
-}
-
-.form-heading h2{
-  margin-top: 5px;
-}
-
-.form-heading p{
-  color: #5f5f5f;
+  color: var(--bkl, hwb(0 19% 81%));
 }
 
 .form form button {
@@ -165,20 +207,21 @@ form input::placeholder {
   outline: none;
   padding: 10px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-top: 25px;
   cursor: pointer;
   transition: 0.2s linear;
   margin-bottom: 15px;
   width: 100%;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .form form button:hover {
-  background-color: #002e5c;
+  background-color: #003366da;
+  color: #ffffffda;
 }
 
-.alert{
+.form form .alert {
   visibility: hidden;
 }

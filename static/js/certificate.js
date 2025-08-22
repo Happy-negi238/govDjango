@@ -1,13 +1,31 @@
 let form = document.getElementById("form")
 let tag = document.querySelectorAll("#anchor")
+let cross = document.getElementById("cross")
+let input = document.getElementById("search")
+let searchIcon = document.getElementById("search-icon")
 
 tag.forEach((a)=>{
     a.addEventListener("click",()=>{
-    // document.body.style.backgroundColor="red"
+    document.body.style.backgroundColor="#808080"
+    document.body.style.overflow="hidden"
     form.style.left="50%"
-    form.style.transition="5s"
+    // form.style.transition="0.2s linear"
     form.style.display="block";
+    input.setAttribute("disabled" , "")
+    input.style.backgroundColor="#808080"
+    searchIcon.style.backgroundColor="#808080"
     })
+})
+
+cross.addEventListener("click", ()=>{
+     document.body.style.backgroundColor="#f6f8fa"
+    document.body.style.overflow="visible"
+    form.style.left="50%"
+    // form.style.transition="0.2s linear"
+    form.style.display="none";
+      input.removeAttribute("disabled" , "")
+    input.style.backgroundColor="#f6f8fa"
+    searchIcon.style.backgroundColor="#f6f8fa"
 })
 
 const validation = (input) => {
