@@ -139,18 +139,20 @@ body {
   justify-content: space-between;
   background-color: white;
   border-radius: 15px;
+  border: 1px solid #0033665b;
+  overflow: hidden;
 }
 
 .project-name {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70vh;
   color: black;
+  height: 70vh;
   background-size: cover;
   overflow: hidden;
   border-radius: 5px;
-  border: 1px solid #0033665b;
+  /* border: 1px solid #0033665b; */
 }
 
 .project-name .project-h4 {
@@ -233,9 +235,9 @@ body {
 /* start update section */
 
 .update-container {
-  margin-top: 150px;
+  margin-top: 15rem;
   background-color: #f3f3f3;
-  padding-top: 10%;
+  padding-top: 2%;
   padding-bottom: 50px;
   /* overflow-x: hidden; */
 }
