@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head%}
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1{
+        margin-top: 100px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Image show</h1>
+{% for i in projectData %}
+    <div class="">{{i.Approved_Projects}}</div>
+    <div class="">{{i.New_Projects}}</div>
+    <img src="{{i.Image_url.url}}" alt="">
+{% endfor %}
+{% endblock %}

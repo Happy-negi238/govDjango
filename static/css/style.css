@@ -192,7 +192,7 @@ body {
 
 @keyframes upside {
   from {
-    top: 100%;
+    top: 200%;
   }
 
   to {
@@ -267,7 +267,6 @@ body {
   gap: 15px;
   margin-top: 20px;
   height: 140px;
-  /* background-color: red; */
   overflow-y: scroll;
   overflow-x: hidden;
   /* scrollbar-width: none; */
@@ -469,8 +468,7 @@ body {
 
 .accordian .answer {
   max-width: 1160px;
-  /* background-color: red; */
-  line-height: 23px;
+  line-height: 25px;
   letter-spacing: 0.8px;
   margin: auto;
   font-size: 17px;

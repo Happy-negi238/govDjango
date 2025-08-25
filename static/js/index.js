@@ -20,7 +20,6 @@ accordians.forEach(accor => {
 // start slider 
 
 
-
 (() => {
   const slider = document.getElementById('slider1');
   const track  = slider.querySelector('.slider-track');

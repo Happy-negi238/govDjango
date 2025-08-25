@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from .models import Projects
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    projectData = Projects.objects.all()
+    return render(request, 'index.html', {'projectData': projectData})
 
 
 def about(request):
@@ -11,5 +12,7 @@ def about(request):
 
 def certificate(request):
     return render(request, 'certificate.html')
-def normal(request):
-    return render(request, 'try.html')
+def delete(request):
+    projectData = Projects.objects.all()
+    # print(projectData.query)
+    return render(request, 'delete.html', {'projectData': projectData})

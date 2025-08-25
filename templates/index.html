@@ -10,10 +10,11 @@
   <div class="container">
      <div class="slider" id="slider1">
       <div class="slider-track">
-        <div class="slide"><img src="../static/images/Infra-Freepik.webp" alt=""></div>
-        <div class="slide"><img src="../static/images/mountain-3.jpg" alt=""></div>
-        <div class="slide"><img src="../static/images/infra2.avif" alt=""></div>
-        <div class="slide"><img src="../static/images/infra1.jpg" alt=""></div>
+        {% for i in projectData %}
+        <div class="slide">
+          <img src="{{i.Image_url.url}}" alt="">
+        </div>
+        {% endfor %}
       </div>
 
       <button class="nav prev" aria-label="Previous slide">
@@ -38,20 +39,9 @@
         </div>
         <div class="project-list">
           <ul>
-            <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
-              Property Administration and Legislations" to be conducted in collaboration with National Law University
-              (NLU), Delhi for the year 2025-26.</li>
-
-            <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
-              Property Administration and Legislations" to be conducted in collaboration with National Law University
-              (NLU), Delhi for the year 2025-26.</li>
-            <li>Application for admission to one year course on "Master of Law (LL.M.) Professional in Intellectual
-              Property Administration and Legislations" to be conducted in collaboration with National Law University
-              (NLU), Delhi for the year 2025-26.</li>
-            <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
-            <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
-            <li>Public Notice:Trade Marks Agent Examination 2026 & Patent Agent Examination 2026</li>
-
+            {% for i in projectData%}
+            <li>{{i.Approved_Projects}}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -66,6 +56,13 @@
       <h1>New Updates</h1>
     </div>
     <div class="project">
+      <!-- {% for i in projectData %}
+      <div class="blink one">
+        <span>
+          <a href="">{{i.New_Projects}}</a>
+        </span>
+      </div>
+      {% endfor %} -->
       <div class="blink one">
         <span>
           <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
@@ -73,23 +70,6 @@
           <a href=""> Railway RRB Technician Recruitment 2025</a>
         </span>
       </div>
-
-      <div class="blink two">
-        <span>
-          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-            2025</a> ||
-          <a href=""> Railway RRB Technician Recruitment 2025</a>
-        </span>
-      </div>
-
-      <div class="blink three">
-        <span>
-          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-            2025</a> ||
-          <a href=""> Railway RRB Technician Recruitment 2025</a>
-        </span>
-      </div>
-
       <div class="blink one">
         <span>
           <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
@@ -97,23 +77,6 @@
           <a href=""> Railway RRB Technician Recruitment 2025</a>
         </span>
       </div>
-
-      <div class="blink two">
-        <span>
-          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-            2025</a> ||
-          <a href=""> Railway RRB Technician Recruitment 2025</a>
-        </span>
-      </div>
-
-      <div class="blink three">
-        <span>
-          <a href="">RRB NTPC Graduate Level Admit Card 2025</a> || <a href="">DRDO RAC Scientist B Recruitment
-            2025</a> ||
-          <a href=""> Railway RRB Technician Recruitment 2025</a>
-        </span>
-      </div>
-
     </div>
 
   </div>
