@@ -12,6 +12,7 @@ def about(request):
 
 def certificate(request):
     return render(request, 'certificate.html')
+
 def delete(request):
     projectData = Projects.objects.all()
     # print(projectData.query)
