@@ -271,31 +271,87 @@ body {
   overflow-x: hidden;
   /* scrollbar-width: none; */
   -ms-overflow-style: none;
+  align-items: center;
 }
 
 .project .blink {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
-  /* background: linear-gradient(to right, #911a80, #d42b45); */
-  /* background-clip: text; */
-  /* color: transparent; */
+  display: flex;
+  /* width: 70%; */
+  /* background-color: red; */
+  justify-content: space-evenly;
+  gap: 10px;
+  /* animation-name: blink-one; */
+
 }
 
+.project ul:nth-child(even){
+   animation-duration: 3.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  position: relative;
+  animation-name: blink-one;
+}
+
+.project ul:nth-child(odd){
+   animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  position: relative;
+  animation-name: blink-one;
+
+}
+
+
+.blink li {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.blink li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+  text-transform: capitalize;
+}
+
+.blink li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+@keyframes blink-one {
+  from {
+    left: 10%;
+  }
+
+  to {
+    left: -15%;
+  }
+}
+.project .blink:hover {
+  animation-play-state: paused;
+}
+
+/* 
 .project .one {
   position: relative;
   font-size: 16px;
   animation-name: blink-one;
-  /* left: 10%; */
   animation-duration: 4s;
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-  /* background-color: red; */
   width: fit-content;
-}
-
+} */
+/* 
 .project .two {
   position: relative;
   font-size: 16px;
@@ -363,7 +419,7 @@ body {
 .project .blink span a:hover {
   text-decoration: underline;
   color: red;
-}
+} */
 
 /* end upadat section */
 
@@ -483,7 +539,7 @@ body {
   transform: rotate(180deg);
 }
 
-.accordian .answer table th{
+.accordian .answer table th {
   border: 1px solid #00000033;
   border-collapse: separate;
   border-spacing: 0;
@@ -501,22 +557,22 @@ body {
   font-size: 15px;
 }
 
-.accordian .answer table thead tr th:nth-child(1){
+.accordian .answer table thead tr th:nth-child(1) {
   border-right: 0;
   border-bottom: 0;
 }
 
-.accordian .answer table thead tr th:nth-child(2){
+.accordian .answer table thead tr th:nth-child(2) {
   /* border-right: 0; */
   border-bottom: 0;
 }
 
-.accordian .answer table tbody tr td:nth-child(1){
+.accordian .answer table tbody tr td:nth-child(1) {
   border-right: 0;
   border-bottom: 0;
 }
 
-.accordian .answer table tbody tr td:nth-child(2){
+.accordian .answer table tbody tr td:nth-child(2) {
   /* border-right: 0; */
   border-bottom: 0;
 }

@@ -1,3 +1,12 @@
+let blink = document.querySelector(".blink")
+
+addEventListener("DOMContentLoaded", ()=>{
+  // blink.style.backgroundColor="red";
+  blink.style.animationName="blink-one"
+})
+
+
+
 const accordians = document.querySelectorAll(".accordian");
 
 accordians.forEach(accor => {
