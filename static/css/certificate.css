@@ -202,7 +202,7 @@ form input::placeholder {
 }
 
 .form form button {
-  background-color: #003366;
+  background-color: #004a94;
   color: white;
   outline: none;
   padding: 10px 20px;
@@ -218,7 +218,7 @@ form input::placeholder {
 }
 
 .form form button:hover {
-  background-color: #003366da;
+  background-color: #003366;
   color: #ffffffda;
 }
 

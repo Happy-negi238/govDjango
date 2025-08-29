@@ -10,9 +10,9 @@
   <div class="container">
     <div class="slider" id="slider1">
       <div class="slider-track">
-        {% for i in projectData %}
+        {% for i in data %}
         <div class="slide">
-          <img src="{{i.Image_url.url}}" alt="">
+          <img src="{{ i }}" alt="">
         </div>
         {% endfor %}
       </div>
@@ -56,9 +56,6 @@
       <h1>New Updates</h1>
     </div>
     <div class="project">
-
- 
-
       {% for row in grouped %}
       <ul class="blink">
         {% for p in row %}
@@ -67,36 +64,6 @@
         {% endfor %}
       </ul>
       {% endfor %}
-
-      <!-- <ul class="blink">
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-    </ul>
-
-    <ul class="blink">
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-    </ul>
-  
-    <ul class="blink">
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-    </ul>
-  
-    <ul class="blink">
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-    </ul>
-  
-    <ul class="blink">
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-      <li><a href="">RRB NTPC Graduate Level Admit Card 2025</a></li>
-    </ul> -->
     </div>
 </section>
 
