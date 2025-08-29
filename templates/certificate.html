@@ -25,76 +25,38 @@
             </thead>
 
             <tbody>
+                {% for i in odd_rows %}
                 <tr>
-                    <td>1</td>
-                    <td>Achievements by Office of CGPDTM</td>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.Approved_Projects }}</td>
                     <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
                 </tr>
+                {% endfor %}
 
-                <tr>
-                    <td>2</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
+              
             </tbody>
         </table>
+
         <table>
             <thead>
                 <th>S. no.</th>
                 <th>File Name</th>
                 <th>Download</th>
             </thead>
+
             <tbody>
+                {% for i in even_rows %}
                 <tr>
-                    <td>6</td>
-                    <td>Achievements by Office of CGPDTM</td>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.Approved_Projects }}</td>
                     <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
                 </tr>
+                {% endfor %}
 
-                <tr>
-                    <td>7</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
-
-                <tr>
-                    <td>8</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
-
-                <tr>
-                    <td>9</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
-
-                <tr>
-                    <td>10</td>
-                    <td>Achievements by Office of CGPDTM</td>
-                    <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
-                </tr>
+              
             </tbody>
-
         </table>
+
 
     </div>
 
@@ -120,6 +82,7 @@
             </span>
         </div>
         <form action="">
+            {% csrf_token %}
             <input onblur="validation(this)" oninput="validation(this)" type="text" placeholder="Enter Your Name">
             <small class="alert">This field is required*</small>
 

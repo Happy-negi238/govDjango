@@ -27,7 +27,19 @@ def about(request):
 
 
 def certificate(request):
-    return render(request, 'certificate.html')
+    with connection.cursor() as cursor:
+        cursor.execute("select id, Approved_Projects from govapp_Projects where id % 2 = 0")
+        even_rows = cursor.fetchall()
+        even_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in even_rows]
+
+        cursor.execute("select id, Approved_Projects  from govapp_Projects where id % 2 = 1")
+        odd_rows = cursor.fetchall()
+        odd_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in odd_rows]
+
+
+
+
+    return render(request, 'certificate.html', {'even_rows': even_name, 'odd_rows': odd_name, })
 
 def delete(request):
     projectData = Projects.objects.all()
