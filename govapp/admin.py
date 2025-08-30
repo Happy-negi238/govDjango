@@ -1,15 +1,13 @@
 from django.contrib import admin
-from .models import Projects, certificate_pdf
-
+from .models import New_Project, Pdf_Detail
 # Register your models here.
-class ProjectsAdmin(admin.ModelAdmin):
-    list_display = ('Image_url','Approved_Projects', 'New_Projects')
+
+class New_ProjectAdmin(admin.ModelAdmin):
+    list_display = ('Image_url', 'New_update')
+
+class Pdf_detailAdmin(admin.ModelAdmin):
+    list_display = ("Approved_Projects", "pdf", "Pasword", "User_id")
 
 
-class certificate_pdfAmin(admin.ModelAdmin):
-    list_display = ('upload_pdf',)
-
-admin.site.register(Projects, ProjectsAdmin)
-admin.site.register(certificate_pdf, certificate_pdfAmin)
-
-
+admin.site.register(New_Project, New_ProjectAdmin)
+admin.site.register(Pdf_Detail, Pdf_detailAdmin)

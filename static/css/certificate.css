@@ -61,7 +61,7 @@ body {
 .certificate-table {
   padding-top: 110px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: auto;
   /* background-color: red; */

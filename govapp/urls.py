@@ -7,8 +7,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path("about-us/", views.about, name='about-us'),
     path("certificate/", views.certificate, name='certificate'),
-    path("delete/", views.delete, name="delete"),
-
 ]
 
 if settings.DEBUG: 

@@ -10,13 +10,12 @@
   <div class="container">
     <div class="slider" id="slider1">
       <div class="slider-track">
-        {% for i in data %}
+        {% for i in imagePath %}
         <div class="slide">
           <img src="{{ i }}" alt="">
         </div>
         {% endfor %}
       </div>
-
       <button class="nav prev" aria-label="Previous slide">
         <svg viewBox="0 0 24 24" fill="none">
           <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -39,7 +38,7 @@
         </div>
         <div class="project-list">
           <ul>
-            {% for i in projectData%}
+            {% for i in pdf_LastToOne%}
             <li>{{i.Approved_Projects}}</li>
             {% endfor %}
           </ul>
@@ -59,7 +58,7 @@
       {% for row in grouped %}
       <ul class="blink">
         {% for p in row %}
-        <li><a href="#">{{ p.New_Projects }}</a></li>
+        <li><a href="#">{{ p.New_update }}</a></li>
         {% if not forloop.last %} || {% endif %}
         {% endfor %}
       </ul>
