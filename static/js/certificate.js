@@ -23,9 +23,17 @@ cross.addEventListener("click", ()=>{
     form.style.left="50%"
     // form.style.transition="0.2s linear"
     form.style.display="none";
-      input.removeAttribute("disabled" , "")
+    input.removeAttribute("disabled" , "")
     input.style.backgroundColor="#f6f8fa"
     searchIcon.style.backgroundColor="#f6f8fa"
+    
+    let name = document.getElementById('name');
+    let phone = document.getElementById('phone');
+    let user_id = document.getElementById('user_id');
+
+    name.value = '';
+    phone.value = '';
+    user_id.value = '';
 })
 
 const validation = (input) => {
@@ -49,3 +57,23 @@ const validation = (input) => {
     }
 }
 
+
+document.getElementById('checkForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    let formData = new FormData(this);
+    fetch("/check_userId/", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if(data.status == "success"){
+            // console.log(data.message);
+            window.open(data.pdf_url, "_blank");
+        }
+        else{
+            alert(data.message)
+        }
+    })
+})

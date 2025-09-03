@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.db import connection
 from django.conf import settings
 from .models import New_Project, Pdf_Detail
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
     with connection.cursor() as cursor:
@@ -32,3 +34,15 @@ def certificate(request):
         odd_rows = cursor.fetchall()
         odd_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in odd_rows]
     return render(request, 'certificate.html', {'even_name': even_name, 'odd_name': odd_name})
+
+
+@csrf_exempt
+def check_userId(request):
+    if request.method == 'POST':
+        User_id = request.POST.get("user_id")
+        if Pdf_Detail.objects.filter(User_id=User_id).exists():
+            pdf_url = Pdf_Detail.objects.get(User_id=User_id).pdf
+            pdf_url = pdf_url.url
+            return JsonResponse({"status": "success", "message": "User ID valid hai", "pdf_url": pdf_url})
+        else:
+            return JsonResponse({"status": "error", "message": "Enter valid User Id"})
