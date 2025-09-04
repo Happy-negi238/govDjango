@@ -62,10 +62,10 @@ def download_pdf(request, user_id):
         for page in reader.pages:
             writer.add_page(page)
 
-        # Password protection lagao
+        # PDF Password protection
         writer.encrypt(user_password=password, owner_password=password)
 
-        # Memory stream me likho
+        # Save into RAM
         output = io.BytesIO()
         writer.write(output)
         output.seek(0)
