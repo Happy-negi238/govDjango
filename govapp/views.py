@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.db import connection
 from django.conf import settings
 from .models import New_Project, Pdf_Detail
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+from PyPDF2 import PdfReader, PdfWriter
+import io
 
 def index(request):
     with connection.cursor() as cursor:
@@ -41,8 +43,36 @@ def check_userId(request):
     if request.method == 'POST':
         User_id = request.POST.get("user_id")
         if Pdf_Detail.objects.filter(User_id=User_id).exists():
-            pdf_url = Pdf_Detail.objects.get(User_id=User_id).pdf
-            pdf_url = pdf_url.url
-            return JsonResponse({"status": "success", "message": "User ID valid hai", "pdf_url": pdf_url})
+            # pdf_url = Pdf_Detail.objects.get(User_id=User_id).pdf
+            # pdf_url = pdf_url.url
+            return JsonResponse({"status": "success", "message": "User ID valid hai", "download_url": f"/download/{User_id}/"})
         else:
             return JsonResponse({"status": "error", "message": "Enter valid User Id"})
+        
+def download_pdf(request, user_id):
+    try:
+        pdf_detail = Pdf_Detail.objects.get(User_id=user_id)
+        pdf_path = pdf_detail.pdf.path
+        password = pdf_detail.Password
+
+        # Original PDF read karo
+        reader = PdfReader(pdf_path)
+        writer = PdfWriter()
+
+        for page in reader.pages:
+            writer.add_page(page)
+
+        # Password protection lagao
+        writer.encrypt(user_password=password, owner_password=password)
+
+        # Memory stream me likho
+        output = io.BytesIO()
+        writer.write(output)
+        output.seek(0)
+
+        response = HttpResponse(output, content_type="application/pdf")
+        response['Content-Disposition'] = f'attachment; filename="{pdf_detail.Approved_Projects}.pdf"'
+        return response
+
+    except Pdf_Detail.DoesNotExist:
+        return HttpResponse("Invalid User ID")

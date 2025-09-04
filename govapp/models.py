@@ -11,5 +11,5 @@ class New_Project(models.Model):
 class Pdf_Detail(models.Model):
     Approved_Projects = models.CharField(max_length=50)
     pdf = models.FileField(upload_to='pdfs/')
-    Pasword = models.BigIntegerField(null=False)
+    Password = models.CharField(max_length=20,null=False)
     User_id = models.CharField(max_length=50, null=False)

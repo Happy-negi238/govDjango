@@ -8,6 +8,7 @@ urlpatterns = [
     path("about-us/", views.about, name='about-us'),
     path("certificate/", views.certificate, name='certificate'),
     path("check_userId/", views.check_userId, name="check_userId/"),
+    path("download/<str:user_id>/", views.download_pdf, name="download_pdf"),
 ]
 
 if settings.DEBUG: 

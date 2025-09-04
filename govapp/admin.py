@@ -6,7 +6,7 @@ class New_ProjectAdmin(admin.ModelAdmin):
     list_display = ('Image_url', 'New_update')
 
 class Pdf_detailAdmin(admin.ModelAdmin):
-    list_display = ("Approved_Projects", "pdf", "Pasword", "User_id")
+    list_display = ("Approved_Projects", "pdf", "Password", "User_id")
 
 
 admin.site.register(New_Project, New_ProjectAdmin)

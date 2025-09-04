@@ -67,7 +67,7 @@ document.getElementById('checkForm').addEventListener('submit', function(e){
     .then(data => {
         if(data.status == "success"){
             // console.log(data.message);
-            window.open(data.pdf_url, "_blank");
+            window.open(data.download_url, "_blank");
         }
         else{
             alert(data.message)
