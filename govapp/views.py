@@ -58,7 +58,7 @@ def download_pdf(request, user_id):
         # Original PDF read karo
         reader = PdfReader(pdf_path)
         writer = PdfWriter()
-
+ 
         for page in reader.pages:
             writer.add_page(page)
 
@@ -71,7 +71,7 @@ def download_pdf(request, user_id):
         output.seek(0)
 
         response = HttpResponse(output, content_type="application/pdf")
-        response['Content-Disposition'] = f'attachment; filename="{pdf_detail.Approved_Projects}.pdf"'
+        response['Content-Disposition'] = f'inline; filename="{pdf_detail.Approved_Projects}.pdf"'
         return response
 
     except Pdf_Detail.DoesNotExist:
