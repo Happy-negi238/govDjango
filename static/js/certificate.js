@@ -56,11 +56,8 @@ const validation = (input) => {
         
     }
 }
-
-
 document.getElementById('checkForm').addEventListener('submit', function(e){
     e.preventDefault();
-
     let formData = new FormData(this);
     fetch("/check_userId/", {
         method: "POST",
