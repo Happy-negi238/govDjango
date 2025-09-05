@@ -27,6 +27,7 @@ def about(request):
 
 
 def certificate(request):
+    i = 1
     with connection.cursor() as cursor:
         cursor.execute("select id, Approved_Projects from govapp_Pdf_Detail where id % 2 = 0")
         even_rows = cursor.fetchall()

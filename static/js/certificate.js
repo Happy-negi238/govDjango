@@ -58,19 +58,26 @@ const validation = (input) => {
 }
 document.getElementById('checkForm').addEventListener('submit', function(e){
     e.preventDefault();
-    let formData = new FormData(this);
-    fetch("/check_userId/", {
-        method: "POST",
-        body: formData
-    })
-    .then(res => res.json())
-    .then(data => {
-        if(data.status == "success"){
-            // console.log(data.message);
-            window.open(data.download_url, "_blank");
-        }
-        else{
-            alert(data.message)
-        }
-    })
+
+    let phone = document.getElementById('phone').value
+
+    if(parseInt(phone.trim().length) === 10){
+        let formData = new FormData(this);
+        fetch("/check_userId/", {
+            method: "POST",
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.status == "success"){
+                // console.log(data.message);
+                window.open(data.download_url, "_blank");
+            }
+            else{
+                alert(data.message)
+            }
+        })
+    }else{
+        alert("Enter Valid Contact Number");
+    }
 })

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class New_Project(models.Model):
-    Image_url = models.ImageField(upload_to='Projects/')
+    Image_url = models.ImageField(upload_to='Projects/', default="null")
     New_update = models.CharField(max_length=50)
 
     def __str__(self):
