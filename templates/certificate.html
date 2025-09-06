@@ -27,7 +27,7 @@
             <tbody>
                 {% for i in odd_name %}
                 <tr>
-                    <td>{{ i.id }}</td>
+                    <td>{{ i.sno }}</td>
                     <td>{{ i.Approved_Projects }}</td>
                     <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
                 </tr>
@@ -45,7 +45,7 @@
             <tbody>
                 {% for i in even_name %}
                 <tr>
-                    <td>{{ i.id }}</td>
+                    <td>{{ i.sno }}</td>
                     <td>{{ i.Approved_Projects }}</td>
                     <td><a id="anchor" href="#">{% include 'icons/pdf1.svg' %}</a></td>
                 </tr>
@@ -77,21 +77,18 @@
                 {% include 'icons/cross.svg' %}
             </span>
         </div>
-        <form action="" id="checkForm">
+        <form action="" id="checkForm" method="post">
             {% csrf_token %}
-            <input onblur="validation(this)" oninput="validation(this)" 
-                name="name"
-                id="name"
-                type="text" 
+            <input onblur="validation(this)" oninput="validation(this)" name="name" id="name" type="text"
                 placeholder="Enter Your Name">
             <small class="alert">This field is required*</small>
 
-            <input onblur="validation(this)" oninput="validation(this)" 
-                id="phone" name="phone" type="number" placeholder="Enter Phone Number without +91">
+            <input onblur="validation(this)" oninput="validation(this)" id="phone" name="phone" type="number"
+                placeholder="Enter Phone Number without +91">
             <small class="alert">This field is required*</small>
 
-            <input onblur="validation(this)" oninput="validation(this)" 
-                id="user_id" name="user_id" type="text" placeholder="Enter Your Id">
+            <input onblur="validation(this)" oninput="validation(this)" id="user_id" name="user_id" type="text"
+                placeholder="Enter Your Id">
             <small class="alert">This field is required*</small>
 
             <button type="submit">Submit</button>

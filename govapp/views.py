@@ -1,17 +1,18 @@
 from django.shortcuts import render
 from django.db import connection
 from django.conf import settings
-from .models import New_Project, Pdf_Detail
+from .models import New_Project, Pdf_Detail, UserData
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from PyPDF2 import PdfReader, PdfWriter
 import io
 
+
 def index(request):
     with connection.cursor() as cursor:
         lastToOne = New_Project.objects.order_by('-id')
-        pdf_LastToOne = Pdf_Detail.objects.order_by('-id')
-        cursor.execute("Select Image_url from govapp_New_Project order by id desc limit 5;")
+        pdf_LastToOne = Pdf_Detail.objects.order_by('-id')[5:]
+        cursor.execute("Select Image_url from govapp_pdf_detail order by id desc limit 5;")
         data = cursor.fetchall()
         imagePath = []
         for a in data:
@@ -22,21 +23,58 @@ def index(request):
             grouped.append(lastToOne[i:i+size])
     return render(request, 'index.html', {'imagePath': imagePath, "grouped": grouped , "pdf_LastToOne": pdf_LastToOne})
 
+
+
 def about(request):
     return render(request, 'about.html')
 
 
-def certificate(request):
-    i = 1
-    with connection.cursor() as cursor:
-        cursor.execute("select id, Approved_Projects from govapp_Pdf_Detail where id % 2 = 0")
-        even_rows = cursor.fetchall()
-        even_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in even_rows]
+# def certificate(request):
+#     i = 1
+#     with connection.cursor() as cursor:
+#         cursor.execute("select id, Approved_Projects from govapp_Pdf_Detail where id % 2 = 0")
+#         even_rows = cursor.fetchall()
+#         even_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in even_rows]
 
-        cursor.execute("select id, Approved_Projects  from govapp_Pdf_Detail where id % 2 = 1")
+#         cursor.execute("select id, Approved_Projects  from govapp_Pdf_Detail where id % 2 = 1")
+#         odd_rows = cursor.fetchall()
+#         odd_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in odd_rows]
+#     return render(request, 'certificate.html', {'even_name': even_name, 'odd_name': odd_name})
+
+def certificate(request):
+    with connection.cursor() as cursor:
+        # Odd rows (id % 2 = 1)
+        cursor.execute("SELECT id, Approved_Projects FROM govapp_Pdf_Detail WHERE id % 2 = 1")
         odd_rows = cursor.fetchall()
-        odd_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in odd_rows]
-    return render(request, 'certificate.html', {'even_name': even_name, 'odd_name': odd_name})
+
+        odd_name = []
+        sno = 1
+        for r in odd_rows:
+            odd_name.append({
+                'sno': sno,                # serial number
+                'id': r[0],                # id from db
+                'Approved_Projects': r[1]  # project name from db
+            })
+            sno += 1
+
+        # Even rows (id % 2 = 0)
+        cursor.execute("SELECT id, Approved_Projects FROM govapp_Pdf_Detail WHERE id % 2 = 0")
+        even_rows = cursor.fetchall()
+
+        even_name = []
+        sno = len(odd_name) + 1            # even numbering odd ke baad se start hogi
+        for r in even_rows:
+            even_name.append({
+                'sno': sno,
+                'id': r[0],
+                'Approved_Projects': r[1]
+            })
+            sno += 1
+
+    return render(request, 'certificate.html', {
+        'odd_name': odd_name,
+        'even_name': even_name
+    })
 
 
 @csrf_exempt
@@ -44,8 +82,10 @@ def check_userId(request):
     if request.method == 'POST':
         User_id = request.POST.get("user_id")
         if Pdf_Detail.objects.filter(User_id=User_id).exists():
-            # pdf_url = Pdf_Detail.objects.get(User_id=User_id).pdf
-            # pdf_url = pdf_url.url
+            user_name = request.POST.get('name')
+            phone_no = request.POST.get('phone')
+            user = UserData(userId=User_id, user_name=user_name, phone_no=phone_no)
+            user.save()
             return JsonResponse({"status": "success", "message": "User ID valid hai", "download_url": f"/download/{User_id}/"})
         else:
             return JsonResponse({"status": "error", "message": "Enter valid User Id"})
@@ -77,3 +117,4 @@ def download_pdf(request, user_id):
 
     except Pdf_Detail.DoesNotExist:
         return HttpResponse("Invalid User ID")
+    

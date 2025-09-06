@@ -56,6 +56,8 @@ const validation = (input) => {
         
     }
 }
+
+
 document.getElementById('checkForm').addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -81,3 +83,6 @@ document.getElementById('checkForm').addEventListener('submit', function(e){
         alert("Enter Valid Contact Number");
     }
 })
+
+
+
