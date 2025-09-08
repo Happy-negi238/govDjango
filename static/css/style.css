@@ -30,20 +30,16 @@ body {
 /* start slider  */
 
 :root {
-  --slider-max-w: 960px;
-  --nav-size: 44px;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  --radius: 10px;
   --transition: 500ms ease;
 }
 
 .slider {
-  width: min(100%, var(--slider-max-w));
+  width: 60%;
   aspect-ratio: 16 / 9;
   position: relative;
-  border-radius: var(--radius);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 24px #0000002e;
 }
 
 .slider-track {
@@ -68,8 +64,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: var(--nav-size);
-  height: var(--nav-size);
+  width: 44px;
+  height: 44px;
   border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.75);
@@ -241,6 +237,7 @@ body {
 .board-container {
   margin-top: 50px;
 }
+
 .heading h1 {
   text-align: center;
   font-size: 35px;

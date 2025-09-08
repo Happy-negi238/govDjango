@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+  /* Start serch input */
+
+  .certificate {
+    padding-top: 10%;
+  }
+
+  .certificate .search-icon {
+    width: 220px;
+    height: 35px;
+    left: 5%;
+  }
+
+  .certificate .search-icon input::placeholder {
+    font-size: 11px;
+  }
+
+  /* End serch input */
+
+  /* Start table section */
+
+  .certificate-table {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .certificate-table table thead th {
+    font-size: 15px;
+  }
+
+  .certificate-table table tbody td {
+    font-size: 13px;
+  }
+
+  .certificate-table table tbody td svg {
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+  }
+
+  /* End table section */
+
+  /* Start important notes */
+
+  .important .english {
+    font-size: 13px;
+  }
+
+  .important .hindi p {
+    font-size: 13px;
+  }
+
+  /* End important notes */
+
+  /* Start form section */
+
+  .form {
+    width: 50%;
+  }
+
+  /* End form section */
+}

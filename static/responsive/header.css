@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+  header {
+    height: 10vh;
+  }
+
+  .logo {
+    margin-left: -30px;
+  }
+  .logo img {
+    width: 120px;
+    object-fit: contain;
+  }
+
+  .quicklinks {
+    margin-left: -50px;
+    gap: 0px;
+  }
+
+  .quicklinks a {
+    width: 80px !important;
+    /* background-color: pink; */
+  }
+
+  .quicklinks a span {
+    font-size: 14px;
+  }
+
+  .email p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 425px) {
+
+  .quicklinks {
+ display: none;
+  }
+
+  .email  {
+    margin-left: -20px;
+  }
+
+  .menu{
+    display: block;
+    margin-left: -140px;
+  }
+
+  .menu i{
+    font-weight: 400;
+  }
+
+  .popup{
+    display: block;
+    height: 40vh;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    z-index: 8;
+  }
+} 
+
+

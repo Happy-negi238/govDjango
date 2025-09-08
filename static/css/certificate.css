@@ -7,17 +7,14 @@
 }
 
 body {
-  /* background-color: #808080; */
   background-color: #f6f8fa;
-  /* overflow: visible; */
 }
+
 .certificate {
   padding-top: 8%;
   height: 100%;
   width: 100%;
   margin: auto;
-  /* position: relative;
-  z-index: 16;       */
 }
 
 .certificate-heading h3 {

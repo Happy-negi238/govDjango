@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  footer {
+    height: 15vh;
+  }
+  .f-one .second-one p {
+    font-size: 12px;
+  }
+
+  .f-one .third-one p {
+    color: white;
+    font-size: 12px;
+  }
+
+  .f-two img {
+    height: 70px;
+    width: 160px;
+    object-fit: contain;
+  }
+}
