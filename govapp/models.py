@@ -14,7 +14,7 @@ class Pdf_Detail(models.Model):
     Password = models.CharField(max_length=20,null=False, unique=True, db_collation='utf8_bin')
     User_id = models.CharField(max_length=50, null=False, unique=True, db_collation='utf8_bin')
     is_delete = models.SmallIntegerField(default=1, null=False)
-
+    created_at = models.DateTimeField(auto_now_add=True)
 
 class UserData(models.Model):
     userId = models.CharField(max_length=50)
