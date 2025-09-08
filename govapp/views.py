@@ -44,25 +44,25 @@ def about(request):
 def certificate(request):
     with connection.cursor() as cursor:
         # Odd rows (id % 2 = 1)
-        cursor.execute("SELECT id, Approved_Projects FROM govapp_Pdf_Detail WHERE id % 2 = 1")
+        cursor.execute("SELECT id, Approved_Projects FROM govapp_Pdf_Detail WHERE id % 2 = 1 and is_delete= 1 AND pdf IS NOT NULL AND pdf != ''")
         odd_rows = cursor.fetchall()
 
         odd_name = []
         sno = 1
         for r in odd_rows:
             odd_name.append({
-                'sno': sno,                # serial number
-                'id': r[0],                # id from db
-                'Approved_Projects': r[1]  # project name from db
+                'sno': sno,                
+                'id': r[0],                
+                'Approved_Projects': r[1]  
             })
             sno += 1
 
         # Even rows (id % 2 = 0)
-        cursor.execute("SELECT id, Approved_Projects FROM govapp_Pdf_Detail WHERE id % 2 = 0")
+        cursor.execute("SELECT id, Approved_Projects FROM govapp_Pdf_Detail WHERE id % 2 = 0 and is_delete= 1 AND pdf IS NOT NULL AND pdf != ''")
         even_rows = cursor.fetchall()
 
         even_name = []
-        sno = len(odd_name) + 1            # even numbering odd ke baad se start hogi
+        sno = len(odd_name) + 1           
         for r in even_rows:
             even_name.append({
                 'sno': sno,

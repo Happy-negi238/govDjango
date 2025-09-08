@@ -86,3 +86,18 @@ document.getElementById('checkForm').addEventListener('submit', function(e){
 
 
 
+input.addEventListener("keyup", function() {
+    let filter = input.value.toLowerCase();
+
+    let rows = document.querySelectorAll("#projectTable tbody tr");
+
+    rows.forEach(function(row) {
+        let projectName = row.cells[1].innerText.toLowerCase();
+
+        if (projectName.includes(filter)) {
+            row.style.display = ""; 
+        } else {
+            row.style.display = "none";  
+        }
+    });
+});
