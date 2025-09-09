@@ -1,5 +1,10 @@
-let menu = document.getElementById("menu")
+let menu = document.getElementById("menu");
+let popup = document.getElementById("popup");
+// let off = document.querySelector(".popup ul")
 
-menu.addEventListener("click", function(){
-    alert("hello")
-})
+// off.style.display="none"
+
+
+menu.addEventListener("click", function () {
+popup.classList.toggle("popup")
+});
