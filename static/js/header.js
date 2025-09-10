@@ -4,7 +4,14 @@ let popup = document.getElementById("popup");
 
 // off.style.display="none"
 
-
 menu.addEventListener("click", function () {
-popup.classList.toggle("popup")
+    
+  if (popup.style.display === "none") {
+    popup.style.display = "block";
+    document.body.style.overflow="hidden"
+  } else {
+    popup.style.display = "none";
+    document.body.style.overflow="visible"
+
+  }
 });

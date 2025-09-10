@@ -124,11 +124,449 @@
   }
 
   .accordian .answer table td {
-  padding: 10px;
-  border: 1px solid #00000033;
-  text-align: left;
-  font-size: 13px;
+    padding: 10px;
+    border: 1px solid #00000033;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  /* End tradmark section */
 }
+
+@media (max-width: 425px) {
+  /* Start image slider */
+
+  .home-container {
+    padding-top: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .home-container .container {
+    gap: 10px;
+  }
+
+  .slider {
+    height: 30vh;
+    border-radius: 8px;
+  }
+
+  .nav {
+    height: 20px;
+    width: 20px;
+  }
+
+  .nav svg {
+    height: 12px;
+    width: 12px;
+  }
+
+  .nav.prev {
+    left: 1px;
+  }
+  .nav.next {
+    right: 1px;
+  }
+
+  /* End image slider */
+
+  /* Start approved project */
+
+  .project-name {
+    height: 30vh;
+  }
+
+  .project-container {
+    border-radius: 8px;
+  }
+  .project-name .project-h4 {
+    font-size: 11px;
+    margin-top: -42px;
+  }
+
+  .project-list ul {
+    gap: 1px;
+  }
+  .project-list ul li {
+    font-size: 9px;
+  }
+
+  .project-list ul li::after {
+  font-size: 6px;
+}
+
+
+  /* End approved project */
+
+  /* Start update section */
+
+  .update-container {
+    margin-top: -1rem;
+    height: 35vh;
+  }
+
+  .heading h1 {
+    font-size: 18px;
+  }
+
+  .blink li a {
+    font-size: 9px;
+  }
+
+  .project ul:nth-child(even) {
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
+  }
+
+  .project ul:nth-child(odd) {
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes blink-one {
+    from {
+      left: 2%;
+    }
+
+    to {
+      left: -5%;
+    }
+  }
+  /* End update section */
+
+  /* Start board member */
+
+  .card-section {
+    gap: 1px;
+    margin-top: 30px;
+    padding: 0px 20px;
+  }
+
+  .card-section .profile {
+    width: 150px;
+    height: 150px;
+    gap: 15px;
+  }
+
+  .card-section .profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile .member-detail h4 {
+    font-size: 12px;
+  }
+
+  /* End board member */
+
+  /* Start tradmark section */
+
+  .trademark {
+    margin-top: 30px;
+  }
+  .trademark .trad-head h2 {
+    font-size: 25px;
+  }
+
+  .trademark .trad-para .para-head {
+    width: 92%;
+    line-height: 18px;
+    font-size: 11px;
+    margin-top: 20px;
+  }
+
+  .accordian {
+    width: 92%;
+    padding: 15px 16px 1px 16px;
+    margin-top: 26px;
+ 
+  }
+
+  .accordian .question h3 {
+    font-size: 15px;
+    color: #003366;
+  }
+
+  .question .icon {
+    font-size: 20px;
+  }
+
+  .accordian .answer {
+    line-height: 18px;
+    font-size: 11px;
+    margin-top: 20px;
+  }
+
+  .accordian .answer table td {
+    padding: 10px;
+    border: 1px solid #00000033;
+    text-align: left;
+    font-size: 11px;
+  }
+
+  /* End tradmark section */
+}
+
+@media (max-width: 375px) {
+  /* Start image slider */
+
+  .home-container {
+    padding-top: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .home-container .container {
+    gap: 10px;
+  }
+
+  .slider {
+    height: 30vh;
+    border-radius: 8px;
+  }
+
+  .nav {
+    height: 20px;
+    width: 20px;
+  }
+
+  .nav svg {
+    height: 12px;
+    width: 12px;
+  }
+
+  .nav.prev {
+    left: 1px;
+  }
+  .nav.next {
+    right: 1px;
+  }
+
+  /* End image slider */
+
+  /* Start approved project */
+
+  .project-name {
+    height: 30vh;
+  }
+
+  .project-container {
+    border-radius: 8px;
+  }
+  .project-name .project-h4 {
+    font-size: 11px;
+    margin-top: -42px;
+  }
+
+  .project-list ul {
+    gap: 1px;
+  }
+  .project-list ul li {
+    font-size: 8px;
+  }
+
+  /* End approved project */
+
+  /* Start update section */
+
+  .update-container {
+    margin-top: -3rem;
+    height: 35vh;
+  }
+
+  .heading h1 {
+    font-size: 18px;
+  }
+
+  .blink {
+    gap: 5px !important;
+    line-height: 8px;
+  }
+  .blink li a {
+    font-size: 8px;
+  }
+
+  .project ul:nth-child(even) {
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
+  }
+
+  .project ul:nth-child(odd) {
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes blink-one {
+    from {
+      left: 2%;
+    }
+
+    to {
+      left: -5%;
+    }
+  }
+  /* End update section */
+
+  /* Start board member */
+
+  .card-section {
+    gap: 1px;
+    margin-top: 20px;
+    padding: 0px 20px;
+  }
+
+  .card-section .profile {
+    width: 150px;
+    height: 150px;
+    gap: 15px;
+  }
+
+  .card-section .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile .member-detail h4 {
+    font-size: 10px;
+  }
+
+  /* End board member */
+
+  /* Start tradmark section */
+
+  .trademark {
+    margin-top: 30px;
+  }
+  .trademark .trad-head h2 {
+    font-size: 22px;
+  }
+
+  .trademark .trad-para .para-head {
+    width: 80%;
+    line-height: 18px;
+    font-size: 11px;
+    margin-top: 20px;
+  }
+
+  /* End tradmark section */
+}
+
+@media (max-width: 320px) {
+  /* Start image slider */
+
+  .slider {
+    height: 28vh;
+    border-radius: 8px;
+  }
+
+  .nav {
+    height: 15px;
+    width: 15px;
+  }
+
+  .nav svg {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* End image slider */
+
+  /* Start approved project */
+
+  .project-name {
+    height: 28vh;
+  }
+
+  .project-name .project-h4 {
+    font-size: 8px;
+  }
+
+  .project-list ul {
+    gap: 1px;
+  }
+  .project-list ul li {
+    font-size: 7px;
+  }
+
+  /* End approved project */
+
+  /* Start update section */
+
+  .update-container {
+    margin-top: -5rem;
+  }
+
+  .heading h1 {
+    font-size: 16px;
+  }
+
+  .blink {
+    gap: 0px;
+    line-height: 5px;
+  }
+
+  .project ul:nth-child(even) {
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
+  }
+
+  .project ul:nth-child(odd) {
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes blink-one {
+    from {
+      left: 2%;
+    }
+
+    to {
+      left: -2%;
+    }
+  }
+  /* End update section */
+
+  /* Start board member */
+
+  .card-section {
+    gap: 1px;
+    margin-top: 10px;
+    padding: 0px 10px;
+  }
+
+  .card-section .profile {
+    width: 150px;
+    height: 150px;
+    gap: 15px;
+  }
+
+  .card-section .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile .member-detail h4 {
+    font-size: 9px;
+  }
+
+  /* End board member */
+
+  /* Start tradmark section */
+
+  .trademark {
+    margin-top: 10px;
+  }
+  .trademark .trad-head h2 {
+    font-size: 18px;
+  }
+
+  .trademark .trad-para .para-head {
+    width: 80%;
+    line-height: 15px;
+    font-size: 11px;
+    margin-top: 20px;
+    text-align: justify;
+  }
 
   /* End tradmark section */
 }

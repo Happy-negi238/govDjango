@@ -269,7 +269,7 @@ body {
 }
 
 .project ul:nth-child(even){
-   animation-duration: 3.5s;
+   animation-duration: 4.5s;
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -279,7 +279,7 @@ body {
 }
 
 .project ul:nth-child(odd){
-   animation-duration: 4s;
+   animation-duration: 5s;
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;

@@ -17,3 +17,103 @@
     object-fit: contain;
   }
 }
+
+@media (max-width: 425px) {
+  footer {
+    height: 15vh;
+  }
+
+  .f-one .first-one a {
+    font-size: 10px;
+  }
+  .footer .f-one {
+    padding: 0px 0px 0px 15px;
+  }
+
+  .f-one .second-one p {
+    width: 200px;
+    font-size: 9px;
+  }
+
+  .f-one .third-one p {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .f-two {
+    padding: 0px 15px 0px 0px;
+  }
+
+  .f-two img {
+    height: 60px;
+    width: 160px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    height: 15vh;
+  }
+
+  .f-one .first-one a {
+    font-size: 10px;
+  }
+  .footer .f-one {
+    padding: 0px 0px 0px 15px;
+  }
+
+  .f-one .second-one p {
+    width: 200px;
+    font-size: 9px;
+  }
+
+  .f-one .third-one p {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .f-two {
+    padding: 0px 15px 0px 0px;
+  }
+
+  .f-two img {
+    height: 60px;
+    width: 140px;
+    object-fit: contain;
+    
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    height: 15vh;
+  }
+
+  .f-one .first-one a {
+    font-size: 10px;
+  }
+  .footer .f-one {
+    padding: 0px 0px 0px 15px;
+  }
+
+  .f-one .second-one p {
+    width: 160px;
+    font-size: 8px;
+  }
+
+  .f-one .third-one p {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .f-two {
+    padding: 0px 5px 0px 0px;
+  }
+
+  .f-two img {
+    height: 60px;
+    width: 120px;
+    object-fit: contain;
+  }
+}

@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
   header {
     height: 10vh;
+    width: 100%;
     /* display: none; */
   }
 
@@ -32,6 +33,10 @@
 }
 
 @media (max-width: 425px) {
+
+  header{
+    width: 100%;
+  }
   .quicklinks {
     display: none;
   }
@@ -50,11 +55,11 @@
   }
 
   .popup {
-    display: block;
+    display: none;
     height: 100vh;
     width: 50%;
     background-color: whitesmoke;
-    position: absolute;
+    position: fixed;
     z-index: 8;
     transition: 0.25s linear;
     top: 0%;
@@ -84,4 +89,48 @@
     color: #003366ad;
     text-decoration: underline;
   }
+}
+
+
+@media (max-width: 375px) {
+  header{
+    width: 100%;
+  }
+  .email {
+    margin-left: -50px;
+  }
+
+  .menu {
+    display: block;
+    margin-left: -140px;
+  }
+
+  .popup ul {
+    margin-top: 25%;
+    padding: 20px 40px;
+    right: 0%;
+    position: absolute;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  .email {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .popup ul {
+    margin-top: 25%;
+    padding: 20px 40px;
+    right: 0%;
+    position: absolute;
+  }
+
 }

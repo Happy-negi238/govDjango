@@ -53,3 +53,148 @@
   }
   /* End download section */
 }
+
+@media (max-width: 425px) {
+  /* End content area */
+
+  .parent {
+    width: 80%;
+  }
+
+  .detail .head h3 {
+    font-size: 18px;
+  }
+
+  .detail .para p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: justify;
+  }
+
+  /* End content area */
+
+  /* Start icon section */
+
+  .icons {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .icons .icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .icons .icon svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .icons .icon h4 {
+    font-size: 10px;
+  }
+
+  /* End icon section */
+
+  /* Start download section */
+
+  .certificate {
+    margin-top: 40px;
+  }
+  .certificate-container {
+    margin-left: 20px;
+  }
+
+  .cert-text h1 {
+    font-size: 18px;
+  }
+
+  .certIcon .insert p {
+    flex-grow: 1;
+    font-size: 9px;
+  }
+
+  /* End download section */
+}
+
+@media (max-width: 375px) {
+  /* End content area */
+
+  .detail .head h3 {
+    font-size: 16px;
+  }
+
+  /* End content area */
+
+  /* Start icon section */
+
+  .icons .icon svg {
+    height: 28px;
+    width: 28px;
+  }
+
+  /* End icon section */
+
+  /* Start download section */
+
+  .certificate-container {
+    margin-left: 0px;
+  }
+  /* End download section */
+}
+
+
+@media (max-width: 320px) {
+  /* End content area */
+
+  .parent {
+    width: 80%;
+  }
+
+  .detail .head h3 {
+    font-size: 15px;
+  }
+
+  .detail .para p {
+    margin-top: -10px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: justify;
+  }
+
+  /* End content area */
+
+  /* Start icon section */
+
+  .icons .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* End icon section */
+
+  /* Start download section */
+
+  .certificate {
+    margin-top: 40px;
+  }
+  .certificate-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .cert-text h1 {
+    font-size: 18px;
+  }
+
+  .certIcon .insert p {
+    flex-grow: 1;
+    font-size: 9px;
+  }
+
+  /* End download section */
+}

@@ -29,18 +29,6 @@ def about(request):
     return render(request, 'about.html')
 
 
-# def certificate(request):
-#     i = 1
-#     with connection.cursor() as cursor:
-#         cursor.execute("select id, Approved_Projects from govapp_Pdf_Detail where id % 2 = 0")
-#         even_rows = cursor.fetchall()
-#         even_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in even_rows]
-
-#         cursor.execute("select id, Approved_Projects  from govapp_Pdf_Detail where id % 2 = 1")
-#         odd_rows = cursor.fetchall()
-#         odd_name = [{'id': r[0], 'Approved_Projects': r[1]} for r in odd_rows]
-#     return render(request, 'certificate.html', {'even_name': even_name, 'odd_name': odd_name})
-
 def certificate(request):
     with connection.cursor() as cursor:
         # Odd rows (id % 2 = 1)

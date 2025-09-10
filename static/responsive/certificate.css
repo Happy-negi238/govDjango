@@ -60,3 +60,159 @@
 
   /* End form section */
 }
+
+
+
+@media (max-width: 425px) {
+  /* Start serch input */
+
+  .certificate {
+    padding-top: 20%;
+  }
+
+  .certificate .search-icon {
+    width: 180px;
+    height: 35px;
+    left: 5%;
+    top: 30%;
+  }
+
+  .certificate .search-icon input::placeholder {
+    font-size: 11px;
+  }
+
+  /* End serch input */
+
+  /* Start table section */
+
+  .certificate-table {
+    width: 90%;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .certificate-table table thead th {
+    font-size: 14px;
+  }
+
+  .certificate-table table tbody td {
+    font-size: 12px;
+  }
+
+  .certificate-table table tbody td svg {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+
+  /* End table section */
+
+  /* Start important notes */
+
+  .important .english {
+    font-size: 11px;
+  }
+
+  .important .hindi p {
+    font-size: 11px;
+  }
+
+  /* End important notes */
+
+  /* Start form section */
+
+  .form {
+    width: 80%;
+  }
+
+  /* End form section */
+}
+
+
+
+@media (max-width: 375px) {
+  /* Start serch input */
+
+  .certificate {
+    padding-top: 25%;
+  }
+
+  .certificate-heading h3{
+    font-size: 22px;
+  }
+
+  /* End serch input */
+
+  /* Start important notes */
+
+ 
+  .important .english h3{
+    font-size: 13px;
+  }
+  .important .english {
+    font-size: 11px;
+  }
+
+   .important .hindi h3{
+    font-size: 13px;
+   }
+  .important .hindi p {
+    font-size: 10px;
+  }
+  /* End important notes */
+
+  /* Start form section */
+
+  .form {
+    width: 85%;
+  }
+
+  /* End form section */
+}
+
+
+
+@media (max-width: 320px) {
+  /* Start serch input */
+
+  .certificate-heading h3 {
+    font-size: 18px;
+  }
+
+  
+  .certificate .search-icon {
+    width: 180px;
+    height: 35px;
+    left: 5%;
+    top: 25%;
+  }
+
+
+  /* End serch input */
+
+  /* Start important notes */
+
+  .important .english h3{
+    font-size: 13px;
+  }
+  .important .english {
+    font-size: 9px;
+  }
+
+   .important .hindi h3{
+    font-size: 13px;
+   }
+  .important .hindi p {
+    font-size: 9px;
+  }
+
+  /* End important notes */
+
+  /* Start form section */
+
+  .form {
+    width: 95%;
+  }
+
+  /* End form section */
+}
