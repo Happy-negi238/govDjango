@@ -7,7 +7,7 @@ class Command(BaseCommand):
     help = 'Delete PDFs older than X seconds (for testing)'
 
     def handle(self, *args, **kwargs):
-        cutoff_date = timezone.now() - timezone.timedelta(seconds=60)  # abhi ke liye 60 sec
+        cutoff_date = timezone.now() - timezone.timedelta(seconds=60)
         old_pdfs = Pdf_Detail.objects.filter(created_at__lt=cutoff_date, pdf__isnull=False).exclude(pdf='')
 
         for pdf in old_pdfs:
@@ -15,6 +15,5 @@ class Command(BaseCommand):
             if pdf_path and os.path.exists(pdf_path):
                 os.remove(pdf_path)  # file delete hogi
             pdf.pdf = ''  # DB me PDF field empty kar denge
-            pdf.save()
-        
+            pdf.save()         
         self.stdout.write(self.style.SUCCESS("Old PDFs deleted successfully"))
