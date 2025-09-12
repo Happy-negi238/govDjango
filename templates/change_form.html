@@ -1,0 +1,12 @@
+{% extends "admin/change_form.html" %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="">
+        <input type="submit" 
+            value="Add Custom UserId" 
+            style="background-color: #004a94; color: white;"
+            name="add_custom_userId"
+        >.
+    </div>
+{% endblock %}

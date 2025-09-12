@@ -1,24 +1,23 @@
 from django.contrib import admin
 from .models import New_Project, Pdf_Detail, UserData
-from admin_extra_buttons.api import ExtraButtonsMixin, button
-from django.urls import reverse
-from django.http import HttpResponseRedirect
+import uuid
+
 # Register your models here.
 
 class New_ProjectAdmin(admin.ModelAdmin):
     list_display = ('New_update',)
 
-class Pdf_detailAdmin(ExtraButtonsMixin, admin.ModelAdmin):
+class Pdf_detailAdmin(admin.ModelAdmin):
     list_display = ("Approved_Projects", "pdf", "Password", "User_id",'Image_url', 'created_at')
-    @button(label="Refresh")
-    def refresh_callable(self, request):
-        self.message_user(request, "refresh called")
-        # use reverse with a view name, not raw URL
-        return HttpResponseRedirect("/")
+    change_form_template = "change_form.html"
+    def response_change(self,request,obj):
+        if "add_custom_userId" in request.POST:
+            my_uuid = str(uuid.uuid4())
+            print(my_uuid[0:8])
+        return super().response_change(request, obj)
 
 class userDataAdmin(admin.ModelAdmin):
     list_display = ('userId', 'user_name', 'phone_no')
-
 
 admin.site.register(New_Project, New_ProjectAdmin)
 admin.site.register(Pdf_Detail, Pdf_detailAdmin)
