@@ -13,7 +13,7 @@ class Pdf_detailAdmin(admin.ModelAdmin):
     def response_change(self,request,obj):
         if "add_custom_userId" in request.POST:
             my_uuid = str(uuid.uuid4())
-            print(my_uuid[0:8])
+            print(my_uuid[0:10])
         return super().response_change(request, obj)
 
 class userDataAdmin(admin.ModelAdmin):
