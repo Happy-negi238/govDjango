@@ -23,12 +23,8 @@ def index(request):
             grouped.append(lastToOne[i:i+size])
     return render(request, 'index.html', {'imagePath': imagePath, "grouped": grouped , "pdf_LastToOne": pdf_LastToOne})
 
-
-
 def about(request):
     return render(request, 'about.html')
-
-
 def certificate(request):
     with connection.cursor() as cursor:
         # Odd rows (id % 2 = 1)

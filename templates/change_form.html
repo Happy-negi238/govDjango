@@ -3,10 +3,23 @@
 {% block submit_buttons_bottom %}
     {{ block.super }}
     <div class="">
-        <input type="submit" 
+        <input type="button" 
             value="Add Custom UserId" 
-            style="background-color: #004a94; color: white;"
+            style="background-color: #0c4e77; color: white;"
             name="add_custom_userId"
-        >.
+            onclick="generateUserId()"
+        >
     </div>
+    <script>
+        const generateUserId = () => {
+            let randomUUID = crypto.randomUUID()
+            let shortUUID = randomUUID.substring(0, 10)
+            shortUUID = shortUUID + "-userId"
+            let userField = document.getElementById("id_User_id")
+            if(userField){
+                userField.value = shortUUID;
+                
+            }
+        }
+    </script>
 {% endblock %}

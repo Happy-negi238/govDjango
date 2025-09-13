@@ -10,11 +10,6 @@ class New_ProjectAdmin(admin.ModelAdmin):
 class Pdf_detailAdmin(admin.ModelAdmin):
     list_display = ("Approved_Projects", "pdf", "Password", "User_id",'Image_url', 'created_at')
     change_form_template = "change_form.html"
-    def response_change(self,request,obj):
-        if "add_custom_userId" in request.POST:
-            my_uuid = str(uuid.uuid4())
-            print(my_uuid[0:10])
-        return super().response_change(request, obj)
 
 class userDataAdmin(admin.ModelAdmin):
     list_display = ('userId', 'user_name', 'phone_no')
