@@ -1,0 +1,12 @@
+asgiref==3.9.1
+Django==5.2.6
+django-admin-extra-buttons==2.1.1
+django-stubs==5.2.5
+django-stubs-ext==5.2.5
+mysqlclient==2.2.7
+pillow==11.3.0
+PyPDF2==3.0.1
+sqlparse==0.5.3
+types-PyYAML==6.0.12.20250915
+typing_extensions==4.15.0
+tzdata==2025.2

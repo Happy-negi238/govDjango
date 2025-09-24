@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import New_Project, Pdf_Detail, UserData
-import uuid
 
 # Register your models here.
 
